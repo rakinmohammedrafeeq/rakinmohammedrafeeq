@@ -13,8 +13,6 @@
 
 - 📫 How to reach me: **www.linkedin.com/in/rakinmohammedrafeeq**
 
-- ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
-
 ---
 
 <h3 align="left">Connect with me:</h3>

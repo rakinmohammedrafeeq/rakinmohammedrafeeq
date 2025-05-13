@@ -79,7 +79,6 @@
 ---
 
 <h3 align="left">GitHub Stats:</h3>
-<h3 align="left">Top Languages:</h3>
 
 <div style="display: flex; justify-content: space-between; width: 100%;">
 

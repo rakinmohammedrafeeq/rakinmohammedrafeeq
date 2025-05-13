@@ -80,13 +80,13 @@
 
 <h3 align="left">GitHub Stats:</h3>
 
-<div style="display: flex; justify-content: space-between; width: 100%;">
+<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
 
   <!-- Top Languages (Left) -->
-  <img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
+  <img style="margin-right: 10px; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
 
   <!-- GitHub Stats (Right) -->
-  <img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
+  <img style="border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
 </div>
 

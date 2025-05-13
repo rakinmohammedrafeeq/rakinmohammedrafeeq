@@ -1,4 +1,4 @@
-[![MasterHead](https://www.shutterstock.com/shutterstock/videos/1027491707/preview/stock-footage-green-digital-binary-data-close-up-k.webm)](https://rakinmohammedrafeeq.io)
+[![MasterHead](https://64.media.tumblr.com/de66bc1f42ced9db81a2df578ceccb60/tumblr_p2fl41w0s31w4t58uo1_540.gifv)](https://rakinmohammedrafeeq.io)
 <h1 align="center">Hi 👋, I'm Rakin Mohammed Rafeeq</h1>
 <h3 align="center">A passionate software developer from India</h3>
 <img align="right" alt="Coding" width="400" src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif">

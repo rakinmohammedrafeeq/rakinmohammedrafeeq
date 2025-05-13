@@ -10,10 +10,12 @@
 </p>
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
+  
 - 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
+  
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
----
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -22,7 +24,6 @@
   </a>
 </p>
 
----
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
@@ -76,7 +77,7 @@
   </a>
 </p>
 
----
+
 
 <h3 align="left">GitHub Stats:</h3>
 

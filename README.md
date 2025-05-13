@@ -22,8 +22,6 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en" alt="rakinmohammedrafeeq" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&" alt="rakinmohammedrafeeq" /></p>
-
 ---
 
 ### Connect With Me:

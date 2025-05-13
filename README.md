@@ -1,7 +1,7 @@
 [![MasterHead](https://i.pinimg.com/originals/72/ca/20/72ca2020ac37eb889622274ee7f21744.gif)](https://rakinmohammedrafeeq.io)
 
 <h1 align="center">Hi 👋, I'm Rakin Mohammed Rafeeq</h1>
-<h3 align="center">A passionate full-stack developer from India</h3>
+<h3 align="center">A passionate software developer from India</h3>
 
 &nbsp;
 

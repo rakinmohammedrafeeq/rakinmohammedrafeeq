@@ -90,4 +90,12 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=dark" /></p>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=darkhub)](https://github.com/ryo-ma/github-profile-trophy)
+this not showing in profile-------<h3 align="left">📊 GitHub Stats:</h3>
+
+<p>
+  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=dark" />
+</p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=dark" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=dark" /></p>

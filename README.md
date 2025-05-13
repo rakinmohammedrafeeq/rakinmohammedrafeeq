@@ -89,3 +89,5 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=dark" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=dark" /></p>
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=darkhub)](https://github.com/ryo-ma/github-profile-trophy)

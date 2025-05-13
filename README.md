@@ -78,32 +78,22 @@
 
 ---
 
-<h3 align="center">📊 GitHub Stats</h3>
+<h3 align="left">GitHub Stats:</h3>
 
-<!-- Row 1: GitHub Stats & Top Languages -->
-<div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=radical&hide_border=true" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-</div>
+<!-- GitHub Stats - Left -->
+<img align="left" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
-<br/>
+<!-- Top Languages - Right -->
+<img align="right" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
 
-<!-- Row 2: Streak Stats -->
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
-</div>
+<br><br><br><br><br><br> <!-- To push next content below the float -->
 
-<br/>
+<!-- Streak Stats -->
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" />
+</p>
 
-<!-- Row 3: Trophies -->
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&row=1&column=6" alt="GitHub Trophies" />
-</div>
+<!-- Trophy Section -->
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
+</p>

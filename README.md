@@ -79,21 +79,26 @@
 ---
 
 <h3 align="left">GitHub Stats:</h3>
+<h3 align="left">Top Languages:</h3>
 
-<!-- GitHub Stats (Left) -->
-<img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
+<div style="display: flex; justify-content: space-between; width: 100%;">
 
-  <!-- Top Languages (Right) -->
+  <!-- Top Languages (Left) -->
   <img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
+
+  <!-- GitHub Stats (Right) -->
+  <img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
 </div>
 
-<!-- Spacing to push content below floating images -->
-<br clear="both"><br><br>
+<!-- Spacing to push content below -->
+<br><br>
+
 <!-- Streak Stats (Centered) -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" />
 </p>
+
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />

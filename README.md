@@ -18,15 +18,11 @@
 
 ---
 
-### GitHub Stats:
-<p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical" />
-</p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=rakinmohammedrafeeq&show_icons=true&locale=en&layout=compact" alt="rakinmohammedrafeeq" /></p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark" alt="Activity Graph" />
-</p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en" alt="rakinmohammedrafeeq" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&" alt="rakinmohammedrafeeq" /></p>
 
 ---
 

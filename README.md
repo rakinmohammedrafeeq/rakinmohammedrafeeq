@@ -81,10 +81,12 @@
 <h3 align="left">GitHub Stats:</h3>
 
 <!-- GitHub Stats (Left) -->
-<img align="left" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
+<img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
-<!-- Top Languages (Right) -->
-<img align="right" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
+  <!-- Top Languages (Right) -->
+  <img style="flex: 1; border: none;" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
+
+</div>
 
 <!-- Spacing to push content below floating images -->
 <br clear="both"><br><br>

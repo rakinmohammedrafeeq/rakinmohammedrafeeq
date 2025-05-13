@@ -80,20 +80,16 @@
 
 <h3 align="left">GitHub Stats:</h3>
 
-<!-- GitHub Stats - Left -->
 <img align="left" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
-<!-- Top Languages - Right -->
-<img align="right" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
+<img align="right" width="90%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
 
-<br><br><br><br><br><br> <!-- To push next content below the float -->
+<br><br><br><br><br><br>
 
-<!-- Streak Stats -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" />
 </p>
 
-<!-- Trophy Section -->
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
 </p>

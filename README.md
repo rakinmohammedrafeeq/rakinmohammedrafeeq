@@ -21,7 +21,7 @@
 ### GitHub Stats:
 
 <p align="center">
-  <img width="48%" align="ceter" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" alt="rakinmohammedrafeeq" />
+  <img width="48%" align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" alt="rakinmohammedrafeeq" />
   &nbsp;<img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true"    alt="rakinmohammedrafeeq"/>
 </p>
 

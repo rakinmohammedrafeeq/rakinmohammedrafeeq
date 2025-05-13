@@ -87,7 +87,6 @@
 <img align="right" width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
 
 <!-- Spacing to push content below floating images -->
-<br clear="both"><br><br>
 
 <!-- Streak Stats (Centered) -->
 <p align="center">

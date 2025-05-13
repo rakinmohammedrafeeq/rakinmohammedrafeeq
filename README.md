@@ -10,7 +10,9 @@
 </p>
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
+  
 - 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
+  
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
 ---
@@ -89,3 +91,9 @@
   <img style="border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
 </div>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
+</p>
+
+

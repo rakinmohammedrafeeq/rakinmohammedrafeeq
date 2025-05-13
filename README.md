@@ -13,6 +13,8 @@
   
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
+&nbsp;
+
 ### Tech Stack:
 
 <p align="left">

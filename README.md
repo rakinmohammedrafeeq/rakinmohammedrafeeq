@@ -7,14 +7,13 @@
 
 <img align="right" alt="Coding" width="400" src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif">
 
-
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
   
 - 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
   
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
-
+&nbsp;
 
 ### Tech Stack:
 

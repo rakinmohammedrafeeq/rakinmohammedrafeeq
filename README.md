@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
   
-- 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
+- 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)** | **[Email](mailto:your@email.com)**
   
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 

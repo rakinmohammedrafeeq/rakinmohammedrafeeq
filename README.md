@@ -9,7 +9,7 @@
   <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20views&color=0e75b6&style=flat" alt="rakinmohammedrafeeq" />
 </p>
 
-- 💬 Ask me about **Python, AI, AI Chatbots, Streamlit, MediaPipe, OpenCV, Hand Gesture Recognition, Web Development, Android Development, Firebase Firestore, Firebase Authentication, Java, gTTS, Pydub, SpeechRecognition**
+- 💬 Ask me about **Machine Learning, Web Development, Android Development**
 
 - 📫 How to reach me: **www.linkedin.com/in/rakinmohammedrafeeq**
 

@@ -20,17 +20,18 @@
 
 ### GitHub Stats:
 <p align="center">
-  <img align="left" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical" alt="rakinmohammedrafeeq" />
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical" alt="rakinmohammedrafeeq" />
+  <img style="border: none;" width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical" alt="rakinmohammedrafeeq" />
+  <img style="border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/>
 </p>
-
-  <!-- GitHub Stats (Right) -->
-  <img style="border: none;" width="48%" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" />
 
 </div>
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark" alt="Activity Graph" />
 </p>
 
 &nbsp;

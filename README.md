@@ -78,20 +78,26 @@
 
 ---
 
-<h3 align="left">GitHub Stats:</h3>
+<h3 align="center">📊 GitHub Stats</h3>
 
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=radical&hide_border=true" />
-</p>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=radical&hide_border=true" alt="GitHub Stats" />
+</div>
 
-<p align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" />
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" />
-</p>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+</div>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" alt="trophy" />
-</p>
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical&hide_border=true" alt="GitHub Streak Stats" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" alt="GitHub Trophies" />
+</div>

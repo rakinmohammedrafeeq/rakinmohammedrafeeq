@@ -7,7 +7,7 @@
 
 - 💬 Ask me about **Python, AI, AI Chatbots, Streamlit, MediaPipe, OpenCV, Hand Gesture Recognition, Web Development, Android Development, Firebase Firestore, Firebase Authentication, Java, gTTS, Pydub, SpeechRecognition**
 
-- 📫 How to reach me **rakinmohammedrafeeq@gmail.com**
+- 📫 How to reach me **www.linkedin.com/in/rakinmohammedrafeeq**
 
 - ⚡ Fun fact **I debug for fun and sometimes forget to eat while coding**
 

@@ -10,9 +10,7 @@
 </p>
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
-
-- 📫 How to reach me: **www.linkedin.com/in/rakinmohammedrafeeq**
-
+- 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
 ---
@@ -82,14 +80,18 @@
 
 <h3 align="left">GitHub Stats:</h3>
 
-<p>
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=dark" />
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=radical" />
 </p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&locale=en&theme=dark" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=dark" /></p>
+<p align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical" />
+</p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=darkhub" alt="trophy" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=radical" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" alt="trophy" />
 </p>

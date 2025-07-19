@@ -73,16 +73,20 @@
 ### GitHub Stats:
 
 <p align="center">
-  <img width="48%" align="left" src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"alt="GitHub Streak Stats"/> &nbsp; <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/>
+  <img width="48%" align="left" src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"alt="GitHub Streak Stats"/> &nbsp;   
+  
+  <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/>
+  
+  <!-- <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/> -->
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
-</p>
+</p> -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark" alt="Activity Graph" />
-</p>
+</p> -->
 
 &nbsp;
 
@@ -105,3 +109,8 @@
 </p>
 
 
+<p align="center">
+  <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
+    <img src="https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-%23000000?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ff005c" alt="Buy Me A Coffee" width="350" height="90" />
+  </a>
+</p>

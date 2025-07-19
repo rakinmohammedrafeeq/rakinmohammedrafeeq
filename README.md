@@ -94,6 +94,8 @@
   </a>
 </p>
 
-<p align="right">
+<!-- <p align="right">
   <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20views&color=0e75b6&style=flat" alt="rakinmohammedrafeeq" />
-</p>
+</p> -->
+
+<p align="center"> <a href="https://www.buymeacoffee.com/rakinrafeeq" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60" width="217" > </a> </p>

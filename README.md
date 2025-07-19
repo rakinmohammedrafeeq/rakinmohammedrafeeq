@@ -110,7 +110,7 @@
   </a>
 </p> -->
 
-<p align="right">
+<p align="center">
   <a href="https://www.buymeacoffee.com/rakinmohammedrafeeq" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="175" >
   </a>

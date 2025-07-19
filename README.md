@@ -100,6 +100,6 @@
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-dark.png" alt="Buy Me A Coffee" height="60" width="217" >
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23151515?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white" alt="Buy Me A Coffee">
   </a>
 </p>

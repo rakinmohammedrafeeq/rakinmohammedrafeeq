@@ -102,23 +102,14 @@
   <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20views&color=0e75b6&style=flat" alt="rakinmohammedrafeeq" />
 </p> -->
 
-<p align="center">
-  <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-black?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ff005c" alt="Buy Me A Coffee" width="300" height="80" />
-  </a>
-</p>
-
-
-<p align="center">
+<!-- <p align="center">
   <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
     <img src="https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-%23000000?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ff005c" alt="Buy Me A Coffee" width="350" height="90" />
   </a>
-</p>
-
+</p> -->
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="250" >
   </a>
 </p>
-

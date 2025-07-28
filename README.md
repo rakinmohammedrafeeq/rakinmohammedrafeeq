@@ -75,7 +75,7 @@
 <p align="center">
   <img width="48%" align="left" src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"alt="GitHub Streak Stats"/> &nbsp;   
 
-  <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true" alt="Top Languages"/>
+ <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true&v=2" alt="Top Languages"/>
 
   <!-- <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/> -->
 </p>

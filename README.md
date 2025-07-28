@@ -82,8 +82,12 @@
 
 &nbsp; 
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
+</p> -->
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&title=Stars,Followers,Commits,Repositories,Issues,PullRequest" />
 </p>
 
 <p align="center">
@@ -115,10 +119,3 @@
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="175" >
   </a>
 </p>
-
-
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&title=Stars,Followers,Commits,Repositories,Issues,PullRequest" />
-</p>
-

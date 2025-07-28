@@ -80,7 +80,7 @@
   <!-- <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/> -->
 </p>
 
-&nbsp; 
+<!-- &nbsp; -->
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />

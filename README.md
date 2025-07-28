@@ -82,13 +82,13 @@
 
 &nbsp; 
 
-<!-- <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
-</p> -->
-
 <p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
+</p> 
+
+<!-- <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&title=Stars,Followers,Commits,Repositories,Issues,PullRequest" />
-</p>
+</p> -->
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark" alt="Activity Graph" />

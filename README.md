@@ -8,6 +8,18 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing SVG" />
   </a>
 </p> </h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing Animation" />
+</p>
+
+<br/> <!-- adds a blank space -->
+
+<h3 align="center" style="font-size:22px;">
+  Artificial Intelligence & Machine Learning Engineering Student
+</h3>
+
+
 <h3 align="center">A passionate software developer from India</h3>
 
 &nbsp;

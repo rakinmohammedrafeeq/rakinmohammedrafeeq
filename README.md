@@ -1,26 +1,16 @@
 [![MasterHead](https://i.pinimg.com/originals/72/ca/20/72ca2020ac37eb889622274ee7f21744.gif)](https://rakinmohammedrafeeq.io)
 
-
-<!-- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=F7A500&center=true&vCenter=true&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq)](https://git.io/typing-svg) -->
-<!-- <h1 align="center">Hi 👋, I'm Rakin Mohammed Rafeeq</h1> -->
-<h1 align="center" style="font-size:1px;" > <p align="center">
+<p align="center">
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing SVG" />
   </a>
-</p> </h1>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing Animation" />
 </p>
 
-<br/> <!-- adds a blank space -->
+---
 
 <h3 align="center" style="font-size:22px;">
   Artificial Intelligence & Machine Learning Engineering Student
 </h3>
-
-
-<h3 align="center">A passionate software developer from India</h3>
 
 &nbsp;
 

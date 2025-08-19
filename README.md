@@ -6,8 +6,6 @@
   </a>
 </p>
 
----
-
 <h3 align="center">
   A passionate software developer from India
 </h3>

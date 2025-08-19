@@ -1,7 +1,8 @@
 [![MasterHead](https://i.pinimg.com/originals/72/ca/20/72ca2020ac37eb889622274ee7f21744.gif)](https://rakinmohammedrafeeq.io)
 
 <p align="center">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing SVG" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=FFFFFF&width=700&lines=Hi+👋,+I'm+Rakin+Mohammed+Rafeeq" alt="Typing SVG" />
 </p>
 
 <h3 align="center">

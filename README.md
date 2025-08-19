@@ -8,8 +8,8 @@
 
 ---
 
-<h3 align="center" style="font-size:22px;">
-  Artificial Intelligence & Machine Learning Engineering Student
+<h3 align="center">
+  A passionate software developer from India
 </h3>
 
 &nbsp;

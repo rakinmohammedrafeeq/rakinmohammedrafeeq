@@ -111,13 +111,14 @@
 <p align="left">
   <!-- LinkedIn -->
   <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" style="margin-right: 15px;" />
   </a>
 
   <!-- GitHub -->
   <a href="https://github.com/rakinmohammedrafeeq" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" />
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" style="margin-right: 15px;" />
   </a>
+</p>
 
   <!-- <!-- Gmail -->
   <!-- <a href="mailto:rakinmohammedrafeeq@gmail.com" target="blank">

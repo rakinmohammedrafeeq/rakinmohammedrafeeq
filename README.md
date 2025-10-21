@@ -32,13 +32,13 @@
     <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
   </a>
   <a href="https://mediapipe.dev" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/google/mediapipe/master/docs/images/mediapipe_logo_color.png" alt="MediaPipe" width="40" height="40"/>
+    <img src="https://developers.google.com/static/mediapipe/images/mediapipe_icon.svg" alt="MediaPipe" width="40" height="40"/>
   </a>
   <a href="https://streamlit.io" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/>
   </a>
-  <a href="https://groq.com" target="_blank" rel="noreferrer">
-    <img src="https://groq.humain.ai/assets/images/groq_logo.svg" alt="Groq" width="40" height="40"/>
+   <a href="https://groq.com" target="_blank" rel="noreferrer">
+    <img src="https://seeklogo.com/images/G/groq-logo-2F6D1B2F1F-seeklogo.com.png" alt="Groq" width="40" height="40"/>
   </a>
 
   <!-- Java & Full Stack -->

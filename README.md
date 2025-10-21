@@ -23,6 +23,11 @@
 
 ### Tech Stack:
 
+
+ <a href="https://groq.com" target="_blank" rel="noreferrer">
+    <img src="https://groq.com/wp-content/uploads/2024/02/Groq-Logo-Full-Color-Light-BG.png" alt="Groq" width="160" height="40"/>
+  </a>
+
 <p align="left">
   <!-- Python & AI/ML -->
   <a href="https://www.python.org" target="_blank" rel="noreferrer">

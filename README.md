@@ -37,10 +37,10 @@
   <a href="https://streamlit.io" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/>
   </a>
-   <a href="https://groq.com" target="_blank" rel="noreferrer">
-    <img src="https://seeklogo.com/images/G/groq-logo-2F6D1B2F1F-seeklogo.com.png" alt="Groq" width="40" height="40"/>
+   <a href="https://grok.com" target="_blank" rel="noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Grok_logo_%28xAI%29_2025.png" alt="Grok" width="40" height="40"/>
   </a>
-
+  
   <!-- Java & Full Stack -->
   <a href="https://www.java.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>

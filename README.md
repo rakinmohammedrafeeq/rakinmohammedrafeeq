@@ -37,8 +37,8 @@
   <a href="https://streamlit.io" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/>
   </a>
-   <a href="https://grok.com" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Grok_logo_%28xAI%29_2025.png" alt="Grok" width="40" height="40"/>
+  <a href="https://groq.com" target="_blank" rel="noreferrer">
+    <img src="https://groq.com/wp-content/uploads/2024/02/Groq-Logo-Full-Color-Light-BG.png" alt="Groq" width="120" height="40"/>
   </a>
   
   <!-- Java & Full Stack -->

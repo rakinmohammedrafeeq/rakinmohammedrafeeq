@@ -15,8 +15,8 @@
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
   
-- 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)**
-  
+- 📫 How to reach me: **- 💬 Ask me about: **Machine Learning, Web Development, Android Development**
+- 📫 Reach me via: [LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq) • rakinmohammedrafeeq@gmail.com**
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
 &nbsp;

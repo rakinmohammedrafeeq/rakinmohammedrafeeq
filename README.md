@@ -126,59 +126,40 @@
 ### Connect With Me:
 
 <p align="left">
+  <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
 
-  <!-- LinkedIn -->
-  <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
-  </a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+  
+  <a href="https://github.com/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>
 
-  <!-- GitHub -->
-  <a href="https://github.com/rakinmohammedrafeeq" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" />
-  </a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+  
+  <a href="mailto:rakinmohammedrafeeq@gmail.com" target="blank">
+    <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" height="30" width="40" />
+  </a> 
 
 </p>
 
-<!-- Gmail -->
-<!--
-<a href="mailto:rakinmohammedrafeeq@gmail.com" target="blank">
-  <img align="center" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="Gmail" height="30" width="40" />
-</a>
--->
+  <!-- Twitter -->
+  <!--<a href="https://twitter.com/RafeeqRakin" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" />
+  </a> -->
 
+  <!-- LeetCode -->
+  <!--<a href="https://leetcode.com/zombie_edge" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" />
+  </a>
+</p> -->
 
-<!-- Twitter -->
-<!--
-<a href="https://twitter.com/RafeeqRakin" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" />
-</a>
--->
-
-
-<!-- LeetCode -->
-<!--
-<a href="https://leetcode.com/zombie_edge" target="blank">
-  <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" />
-</a>
--->
-
-
-<!-- Profile Views -->
-<!--
-<p align="right">
+<!-- <p align="right">
   <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20views&color=0e75b6&style=flat" alt="rakinmohammedrafeeq" />
-</p>
--->
+</p> -->
 
-
-<!-- Buy Me a Coffee -->
-<!--
-<p align="center">
+<!-- <p align="center">
   <a href="https://www.buymeacoffee.com/yourusername" target="_blank">
     <img src="https://img.shields.io/badge/BUY%20ME%20A%20COFFEE-%23000000?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ff005c" alt="Buy Me A Coffee" width="350" height="90" />
   </a>
-</p>
--->
+</p> -->
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/rakinmohammedrafeeq" target="_blank">

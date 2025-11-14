@@ -15,9 +15,11 @@
 
 - 💬 Ask me about **Machine Learning, Web Development, Android Development**
 
-- 📫 Reach me via: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq) • rakinmohammedrafeeq@gmail.com**
+- 📫 Reach me via: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)** • **rakinmohammedrafeeq@gmail.com**
 
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
+
+- 🤝 I’m open to **internship opportunities in AI, ML, and Software Development**
 
 &nbsp;
 

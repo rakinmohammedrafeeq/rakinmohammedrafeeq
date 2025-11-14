@@ -126,13 +126,10 @@
 ### Connect With Me:
 
 <p align="left">
-  <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-
-&nbsp;&nbsp;&nbsp;
   
-  <a href="https://github.com/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>
-
-&nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
+  
+  <a href="https://github.com/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
   
   <a href="mailto:rakinmohammedrafeeq@gmail.com" target="blank">
     <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" height="30" width="40" />

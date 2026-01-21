@@ -30,24 +30,7 @@
 ### Tech Stack:
 
 <p align="left">
-  <!-- Python & AI/ML -->
-  <a href="https://www.python.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a>
-  <a href="https://opencv.org/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
-  </a>
-  <a href="https://mediapipe.dev" target="_blank" rel="noreferrer">
-    <img src="https://developers.google.com/static/mediapipe/images/mediapipe_icon.svg" alt="MediaPipe" width="40" height="40"/>
-  </a>
-  <a href="https://streamlit.io" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/>
-  </a>
-  <a href="https://groq.com" target="_blank" rel="noreferrer">
-    <img src="https://groq.com/favicon.ico" alt="Groq" width="32" height="32"/>
-  </a>
-  
-  <!-- Java & Full Stack -->
+  <!-- Java & Full Stack (Primary Focus) -->
   <a href="https://www.java.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/>
   </a>
@@ -64,6 +47,19 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
   </a>
 
+  <!-- Databases -->
+  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
+  </a>
+  <a href="https://www.oracle.com/database/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/>
+  </a>
+
+  <!-- Cloud -->
+  <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+  </a>
+
   <!-- Mobile / Android -->
   <a href="https://developer.android.com" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
@@ -72,17 +68,21 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="firebase" width="40" height="40"/>
   </a>
 
-  <!-- Cloud -->
-  <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/>
+  <!-- Python & AI/ML -->
+  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
   </a>
-
-  <!-- Databases -->
-  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
+  <a href="https://opencv.org/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/>
   </a>
-  <a href="https://www.oracle.com/database/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/>
+  <a href="https://mediapipe.dev" target="_blank" rel="noreferrer">
+    <img src="https://developers.google.com/static/mediapipe/images/mediapipe_icon.svg" alt="MediaPipe" width="40" height="40"/>
+  </a>
+  <a href="https://streamlit.io" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" alt="streamlit" width="40" height="40"/>
+  </a>
+  <a href="https://groq.com" target="_blank" rel="noreferrer">
+    <img src="https://groq.com/favicon.ico" alt="Groq" width="32" height="32"/>
   </a>
 
   <!-- Other Tools -->
@@ -98,6 +98,7 @@
 </p>
 
 &nbsp;
+
 <!--
 ### GitHub Stats:
 

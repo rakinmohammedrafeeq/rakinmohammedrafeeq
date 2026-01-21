@@ -6,20 +6,24 @@
 </p>
 
 <h3 align="center">
-  A passionate software developer from India
+  A Java Full-Stack–focused developer building scalable and user-centric applications
 </h3>
 
 &nbsp;
 
 <img align="right" alt="Coding" width="400" src="https://i.pinimg.com/originals/90/70/32/9070324cdfc07c68d60eed0c39e77573.gif">
 
-- 💬 Ask me about **Machine Learning, Web Development, Android Development**
+- 💬 Ask me about **Java, Spring Boot, Data Structures & Algorithms, Web Development, and Android Development**
+
+- 🛠️ Experienced in **backend development with Java**, building RESTful APIs, and integrating front-end interfaces
+
+- 🌱 Actively strengthening skills in **Full-Stack Development (Java + modern web technologies)**
 
 - 📫 Reach me via: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)** • **rakinmohammedrafeeq@gmail.com**
 
-- ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
+- ⚡ Fun fact: **I enjoy debugging backend logic and optimizing code more than writing boilerplate**
 
-- 🤝 I’m open to **internship opportunities in AI, ML, and Software Development**
+- 🤝 Open to **internships and entry-level roles in Java Full-Stack and Software Development**
 
 &nbsp;
 
@@ -94,37 +98,66 @@
 </p>
 
 &nbsp;
-
+<!--
 ### GitHub Stats:
 
 <p align="center">
- <img width="48%" align="left" src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"alt="GitHub Streak Stats"/> 
-
- <!-- <img width="48%" align="left" src="https://github-readme-streak-stats.herokuapp.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true" alt="GitHub Streak Stats"/> -->
-  
-<!-- &nbsp; -->  
- 
- <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true&v=2" alt="Top Languages"/>
-
-  <!-- <img width="48%" align="center" src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true" alt="rakinmohammedrafeeq"/> -->
+ <img width="48%" align="left"
+      src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"
+      alt="GitHub Streak Stats"/> 
 </p>
+-->
 
+<!--
+<p align="center">
+ <img width="48%" align="left"
+      src="https://github-readme-streak-stats.herokuapp.com?user=rakinmohammedrafeeq&theme=radical&hide_border=true"
+      alt="GitHub Streak Stats"/>
+</p>
+-->
+
+<!--
+<p align="center">
+ <img width="48%" align="center"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=rakinmohammedrafeeq&layout=compact&theme=radical&hide_border=true&v=2"
+      alt="Top Languages"/>
+</p>
+-->
+
+<!--
+<p align="center">
+ <img width="48%" align="center"
+      src="https://github-readme-stats.vercel.app/api?username=rakinmohammedrafeeq&show_icons=true&theme=radical&hide_border=true"
+      alt="rakinmohammedrafeeq"/>
+</p>
+-->
+
+<!--
 &nbsp;
+-->
 
+<!--
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true" />
-</p> 
-
-<!-- <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&title=Stars,Followers,Commits,Repositories,Issues,PullRequest" />
-</p> -->
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark" alt="Activity Graph" />
 </p>
+-->
 
-<!-- &nbsp; -->
+<!--
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rakinmohammedrafeeq&theme=radical&no-frame=true&title=Stars,Followers,Commits,Repositories,Issues,PullRequest" />
+</p>
+-->
 
+<!--
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rakinmohammedrafeeq&theme=react-dark"
+       alt="Activity Graph" />
+</p>
+-->
+
+<!--
+&nbsp;
+-->
 ### Connect With Me:
 
 <p align="left">
@@ -142,7 +175,8 @@
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="175" >
   </a>
 </p>
-
+<!--
 <p align="right">
   <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20views&color=0e75b6&style=flat" alt="rakinmohammedrafeeq" />
 </p>
+-->

@@ -204,9 +204,8 @@ Python, Streamlit, LLM APIs
 </p>
 -->
 
-<!--
 &nbsp;
--->
+
 ### Connect With Me:
 
 <p align="left">

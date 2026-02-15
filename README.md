@@ -102,6 +102,56 @@
 
 &nbsp;
 
+---
+
+## 🚀 Featured Projects
+
+### 🔹 AlliedEdge — Full-Stack Social Networking Platform
+A scalable social platform supporting user profiles, media posts, and real-time chat.
+
+**What it does**
+- User authentication and profile management
+- Media uploads with real-time messaging
+- Secure REST APIs with role-based access
+
+**Tech Stack**
+Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
+
+🔗 **Live Demo:** https://allied-edge.vercel.app
+
+---
+
+### 🔹 Zyren — Secure Paste-Sharing Platform
+A privacy-focused platform for sharing text content with fine-grained access control.
+
+**What it does**
+- Public and private paste sharing
+- JWT-based authentication and RBAC
+- Automatic paste expiry and admin moderation
+- Optional AI-assisted text summarization
+
+**Tech Stack**
+Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
+
+🔗 **Live Demo:** https://zyren.netlify.app
+
+---
+
+### 🔹 Rykan — AI-Assisted Chatbot
+Conversational assistant supporting both text and speech-based interactions.
+
+**What it does**
+- Converts speech to text for user interaction
+- Integrates LLM APIs for intelligent responses
+- Designed for rapid prototyping and experimentation
+
+**Tech Stack**
+Python, Streamlit, LLM APIs
+
+🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app
+
+---
+
 <!--
 ### GitHub Stats:
 

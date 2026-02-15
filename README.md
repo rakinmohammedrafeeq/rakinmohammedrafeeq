@@ -102,7 +102,7 @@
 
 &nbsp;
 
-## 🚀 Featured Projects
+## Featured Projects:
 
 ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
 A scalable social platform supporting user profiles, media posts, and real-time chat.

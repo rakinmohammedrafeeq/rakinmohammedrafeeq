@@ -117,6 +117,7 @@ Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Do
 
 🔗 **Live Demo:** https://allied-edge.vercel.app
 
+<br>
 
 ### 🔹 Zyren — Secure Paste-Sharing Platform
 A privacy-focused platform for sharing text content with fine-grained access control.
@@ -132,6 +133,7 @@ Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://zyren.netlify.app
 
+<br>
 
 ### 🔹 Rykan — AI-Assisted Chatbot
 Conversational assistant supporting both text and speech-based interactions.

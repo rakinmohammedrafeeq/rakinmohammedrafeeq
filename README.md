@@ -21,7 +21,7 @@
 
 - 📫 Reach me via: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)** • **rakinmohammedrafeeq@gmail.com**
 
-- ⚡ Fun fact: **I enjoy debugging backend logic and optimizing code more than writing boilerplate**
+- ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**
 
 - 🤝 Open to **internships and entry-level roles in Java Full-Stack and Software Development**
 

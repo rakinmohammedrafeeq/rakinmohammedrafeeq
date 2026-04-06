@@ -19,6 +19,8 @@
 
 - 🌱 Actively strengthening skills in **Full-Stack Development (Java + modern web technologies)**
 
+- 🌐 Portfolio: **[View Portfolio](https://rakinmohammedrafeeq.vercel.app)**
+
 - 📫 Reach me via: **[LinkedIn](https://www.linkedin.com/in/rakinmohammedrafeeq)** • **rakinmohammedrafeeq@gmail.com**
 
 - ⚡ Fun fact: **I debug for fun and sometimes forget to eat while coding**

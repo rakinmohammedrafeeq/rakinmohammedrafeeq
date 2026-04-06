@@ -105,12 +105,13 @@
 ## Featured Projects:
 
 ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
-A scalable social platform supporting user profiles, media posts, and real-time chat.
+A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
 
 **What it does**
-- User authentication and profile management
-- Media uploads with real-time messaging
-- Secure REST APIs with role-based access
+- Real-time chat using WebSockets (STOMP/SockJS)
+- Google OAuth2 authentication with secure backend (Spring Security)
+- Media uploads with Cloudinary integration
+- REST APIs with PostgreSQL and Flyway for production-ready data management
 
 **Tech Stack**
 Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
@@ -119,14 +120,15 @@ Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Do
 
 <br>
 
-### 🔹 Zyren — Secure Paste-Sharing Platform
-A privacy-focused platform for sharing text content with fine-grained access control.
+### 🔹 Zyren — Secure Paste Sharing Platform
+A secure full-stack platform for sharing text/code snippets with access control and lifecycle management.
 
 **What it does**
-- Public and private paste sharing
-- JWT-based authentication and RBAC
-- Automatic paste expiry and admin moderation
-- Optional AI-assisted text summarization
+- JWT authentication, Google OAuth2 login, and role-based access control (RBAC)
+- Public and private paste sharing via unique access codes
+- Automated expiration system with scheduled jobs
+- Media uploads via Cloudinary with secure access validation
+- Email-based password reset using Resend API
 
 **Tech Stack**
 Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
@@ -135,19 +137,36 @@ Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
 <br>
 
-### 🔹 Rykan — AI-Assisted Chatbot
-Conversational assistant supporting both text and speech-based interactions.
+### 🔹 Ledgera — Finance Tracking and Analytics System
+A full-stack finance management system for tracking records and generating analytics dashboards.
 
 **What it does**
-- Converts speech to text for user interaction
-- Integrates LLM APIs for intelligent responses
-- Designed for rapid prototyping and experimentation
+- Financial record management with secure JWT authentication and RBAC
+- RESTful APIs for data handling and analytics processing
+- Dashboard visualization using modern frontend tools
+- PostgreSQL integration with Flyway for schema consistency
+- Deployed using Docker, Vercel, and Render
+
+**Tech Stack**
+Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
+
+🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
+🔗 **GitHub:** https://github.com/rakinmohammedrafeeq/ledgera-finance-system
+
+<br>
+
+### 🔹 Rykan — AI-Assisted Chatbot
+An AI-powered chatbot supporting both text and speech-based interaction.
+
+**What it does**
+- Speech-to-text input processing for user interaction
+- Integration with LLM APIs for conversational responses
+- Lightweight UI built with Streamlit for rapid prototyping
 
 **Tech Stack**
 Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app
-
 
 <!--
 ### GitHub Stats:

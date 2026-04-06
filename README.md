@@ -119,6 +119,7 @@ A scalable full-stack platform supporting user profiles, media sharing, and real
 Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://allied-edge.vercel.app
+🔒 **Source Code:** Available upon request
 
 <br>
 
@@ -136,6 +137,7 @@ A secure full-stack platform for sharing text/code snippets with access control 
 Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://zyren.netlify.app
+🔒 **Source Code:** Available upon request
 
 <br>
 
@@ -169,6 +171,7 @@ An AI-powered chatbot supporting both text and speech-based interaction.
 Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app
+🔒 **Source Code:** Available upon request
 
 <!--
 ### GitHub Stats:

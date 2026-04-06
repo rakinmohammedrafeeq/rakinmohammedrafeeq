@@ -234,8 +234,8 @@ Python, Streamlit, LLM APIs
 <p align="left">
   <a href="mailto:rakinmohammedrafeeq@gmail.com" target="blank"><img align="center" src="https://www.svgrepo.com/show/303161/gmail-icon-logo.svg" alt="Gmail" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
   <a href="https://linkedin.com/in/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
   <a href="https://rakinmohammedrafeeq.vercel.app" target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Portfolio" height="30" width="30" /></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/rakinmohammedrafeeq" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>&nbsp;&nbsp;&nbsp;
 </p>
     
   <!-- <a href="https://leetcode.com/" target="blank">

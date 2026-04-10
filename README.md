@@ -104,7 +104,7 @@
 
 &nbsp;
 
-<!-- ## Featured Projects:
+## Featured Projects:
 
 ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
 A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
@@ -171,7 +171,7 @@ An AI-powered chatbot supporting both text and speech-based interaction.
 Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app<br>
-🔒 **Source Code:** Available upon request -->
+🔒 **Source Code:** Available upon request
 
 <!--
 ### GitHub Stats:

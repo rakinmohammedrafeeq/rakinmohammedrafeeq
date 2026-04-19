@@ -72,7 +72,6 @@ Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 🔗 **Live Demo:** https://zyren.netlify.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
 
-
 ### 🔹 Ledgera — Finance Tracking and Analytics System
 A full-stack finance management system for tracking records and generating analytics dashboards.
 
@@ -88,7 +87,6 @@ Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera
-
 
 <!-- ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.

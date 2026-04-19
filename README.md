@@ -163,11 +163,11 @@ Python, Streamlit, LLM APIs
 ## Connect With Me:
 
 <p align="left">
-  <a href="mailto:rakinmohammedrafeeq@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="44"/></a>
-  <a href="https://linkedin.com/in/rakinmohammedrafeeq"><img src="https://skillicons.dev/icons?i=linkedin" height="44"/></a>
+  <a href="mailto:rakinmohammedrafeeq@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="44"/></a>&nbsp;
+  <a href="https://linkedin.com/in/rakinmohammedrafeeq"><img src="https://skillicons.dev/icons?i=linkedin" height="44"/></a>&nbsp;
   <a href="https://rakinmohammedrafeeq.vercel.app"><img src="https://img.icons8.com/ios-filled/50/ffffff/domain.png"
          style="background-color:#1e293b; padding:6px; border-radius:10px;"
-         height="44"/></a>
+         height="44"/></a>&nbsp;
   <!-- <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" -->
   <a href="https://github.com/rakinmohammedrafeeq">
     <img src="https://skillicons.dev/icons?i=github" height="44"/>

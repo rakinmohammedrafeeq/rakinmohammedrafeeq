@@ -90,7 +90,7 @@ Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera
 
 
-### 🔹 Rykan — AI-Assisted Chatbot
+<!-- ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.
 
 **What it does**
@@ -102,7 +102,7 @@ An AI-powered chatbot supporting both text and speech-based interaction.
 Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/rykan
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/rykan -->
 <!--
 ### GitHub Stats:
 

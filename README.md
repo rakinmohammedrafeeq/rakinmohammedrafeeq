@@ -118,10 +118,8 @@ A scalable full-stack platform supporting user profiles, media sharing, and real
 **Tech Stack**
 Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
 
-🔗 **Live Demo:** https://allied-edge.vercel.app<br>
-🔒 **Source Code:** Available upon request
-
-<br>
+🔗 **Live Demo:** https://allied-edge.vercel.app  
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge
 
 ### 🔹 Zyren — Secure Paste Sharing Platform
 A secure full-stack platform for sharing text/code snippets with access control and lifecycle management.
@@ -136,10 +134,9 @@ A secure full-stack platform for sharing text/code snippets with access control 
 **Tech Stack**
 Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
-🔗 **Live Demo:** https://zyren.netlify.app<br>
-🔒 **Source Code:** Available upon request
+🔗 **Live Demo:** https://zyren.netlify.app  
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
 
-<br>
 
 ### 🔹 Ledgera — Finance Tracking and Analytics System
 A full-stack finance management system for tracking records and generating analytics dashboards.
@@ -155,9 +152,8 @@ A full-stack finance management system for tracking records and generating analy
 Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
-🔗 **GitHub:** https://github.com/rakinmohammedrafeeq/ledgera-finance-system
+🔗 **GitHub:** https://github.com/rakinmohammedrafeeq/ledgera
 
-<br>
 
 ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.
@@ -170,9 +166,8 @@ An AI-powered chatbot supporting both text and speech-based interaction.
 **Tech Stack**
 Python, Streamlit, LLM APIs
 
-🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app<br>
-🔒 **Source Code:** Available upon request
-
+🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app  
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/rykan
 <!--
 ### GitHub Stats:
 

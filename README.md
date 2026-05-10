@@ -57,16 +57,18 @@ Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Do
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
 
 ### 🔹 Ledgera — Finance Tracking and Analytics System
-A full-stack finance management system for tracking records and generating analytics dashboards.
 
-**What it does**
+Ledgera is a full-stack finance management platform for tracking transactions, managing collaborative workspaces, and visualizing financial insights through interactive dashboards and secure role-based access control.
+
+#### Features
 - Financial record management with secure JWT authentication and RBAC
-- RESTful APIs for data handling and analytics processing
-- Dashboard visualization using modern frontend tools
-- PostgreSQL integration with Flyway for schema consistency
-- Deployed using Docker, Vercel, and Render
+- Workspace-based collaboration with permission-controlled access
+- RESTful APIs for transaction handling and analytics processing
+- Interactive analytics dashboards and data visualization
+- PostgreSQL integration with Flyway database migrations
+- Production deployment using Docker, Render, and Vercel
 
-**Tech Stack**
+#### Tech Stack
 Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  

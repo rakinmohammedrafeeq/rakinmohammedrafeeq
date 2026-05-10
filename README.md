@@ -41,7 +41,7 @@
 
 ## Featured Projects:
 
-### 🔹 AlliedEdge — Full-Stack Social Networking Platform
+<!-- ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
 A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
 
 **What it does**
@@ -54,7 +54,23 @@ A scalable full-stack platform supporting user profiles, media sharing, and real
 Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://allied-edge.vercel.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
+
+### 🔹 Ledgera — Finance Tracking and Analytics System
+A full-stack finance management system for tracking records and generating analytics dashboards.
+
+**What it does**
+- Financial record management with secure JWT authentication and RBAC
+- RESTful APIs for data handling and analytics processing
+- Dashboard visualization using modern frontend tools
+- PostgreSQL integration with Flyway for schema consistency
+- Deployed using Docker, Vercel, and Render
+
+**Tech Stack**
+Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
+
+🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera
 
 ### 🔹 Zyren — Secure Paste Sharing Platform
 A secure full-stack platform for sharing text/code snippets with access control and lifecycle management.
@@ -72,21 +88,7 @@ Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 🔗 **Live Demo:** https://zyren.netlify.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
 
-### 🔹 Ledgera — Finance Tracking and Analytics System
-A full-stack finance management system for tracking records and generating analytics dashboards.
 
-**What it does**
-- Financial record management with secure JWT authentication and RBAC
-- RESTful APIs for data handling and analytics processing
-- Dashboard visualization using modern frontend tools
-- PostgreSQL integration with Flyway for schema consistency
-- Deployed using Docker, Vercel, and Render
-
-**Tech Stack**
-Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
-
-🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera
 
 <!-- ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.

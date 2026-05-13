@@ -41,21 +41,6 @@
 
 ## Featured Projects:
 
-<!-- ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
-A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
-
-**What it does**
-- Real-time chat using WebSockets (STOMP/SockJS)
-- Google OAuth2 authentication with secure backend (Spring Security)
-- Media uploads with Cloudinary integration
-- REST APIs with PostgreSQL and Flyway for production-ready data management
-
-**Tech Stack**
-Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
-
-🔗 **Live Demo:** https://allied-edge.vercel.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
-
 ### 🔹 Ledgera — Finance Tracking and Analytics System
 
 Ledgera is a full-stack finance management platform for tracking transactions, managing collaborative workspaces, and visualizing financial insights through interactive dashboards and secure role-based access control.
@@ -90,7 +75,20 @@ Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 🔗 **Live Demo:** https://zyren.netlify.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
 
+<!-- ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
+A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
 
+**What it does**
+- Real-time chat using WebSockets (STOMP/SockJS)
+- Google OAuth2 authentication with secure backend (Spring Security)
+- Media uploads with Cloudinary integration
+- REST APIs with PostgreSQL and Flyway for production-ready data management
+
+**Tech Stack**
+Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
+
+🔗 **Live Demo:** https://allied-edge.vercel.app  
+🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
 
 <!-- ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.
@@ -105,6 +103,7 @@ Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/rykan -->
+
 <!--
 ### GitHub Stats:
 

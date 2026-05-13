@@ -69,13 +69,13 @@ A secure full-stack platform for sharing text/code snippets with access control 
 - Media uploads via Cloudinary with secure access validation
 - Email-based password reset using Resend API
 
-**Tech Stack**
+#### Tech Stack
 Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://zyren.netlify.app  
 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
 
-<!-- ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
+### 🔹 AlliedEdge — Full-Stack Social Networking Platform
 A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.
 
 **What it does**
@@ -84,11 +84,12 @@ A scalable full-stack platform supporting user profiles, media sharing, and real
 - Media uploads with Cloudinary integration
 - REST APIs with PostgreSQL and Flyway for production-ready data management
 
-**Tech Stack**
+#### Tech Stack
 Java 17, Spring Boot, Spring Security, OAuth2, WebSockets, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://allied-edge.vercel.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
+🔒 **Source Code:** Available upon request
+<!-- 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/AlliedEdge -->
 
 <!-- ### 🔹 Rykan — AI-Assisted Chatbot
 An AI-powered chatbot supporting both text and speech-based interaction.
@@ -98,7 +99,7 @@ An AI-powered chatbot supporting both text and speech-based interaction.
 - Integration with LLM APIs for conversational responses
 - Lightweight UI built with Streamlit for rapid prototyping
 
-**Tech Stack**
+#### Tech Stack
 Python, Streamlit, LLM APIs
 
 🔗 **Live Demo:** https://rakinmohammedrafeeq-rykan.streamlit.app  

@@ -57,7 +57,8 @@ Ledgera is a full-stack finance management platform for tracking transactions, m
 Java, Spring Boot, Spring Security, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://ledgera-finance-system.vercel.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera
+🔒 **Source Code:** Available upon request
+<!-- 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/ledgera -->
 
 ### 🔹 Zyren — Secure Paste Sharing Platform
 A secure full-stack platform for sharing text/code snippets with access control and lifecycle management.
@@ -73,7 +74,8 @@ A secure full-stack platform for sharing text/code snippets with access control 
 Java, Spring Boot, Spring Security, JWT, PostgreSQL, React, Docker
 
 🔗 **Live Demo:** https://zyren.netlify.app  
-🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren
+🔒 **Source Code:** Available upon request
+<!-- 🔒 **Source Code:** https://github.com/rakinmohammedrafeeq/zyren -->
 
 ### 🔹 AlliedEdge — Full-Stack Social Networking Platform
 A scalable full-stack platform supporting user profiles, media sharing, and real-time communication.

@@ -166,6 +166,6 @@ I'm currently locking in on **Java Full-Stack Development** — open to internsh
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-informational?style=for-the-badge)](https://rakinmohammedrafeeq.vercel.app)
 [![Email](https://img.shields.io/badge/Email-Reach_Out-informational?style=for-the-badge)](mailto:rakinmohammedrafeeq@gmail.com)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D0221,50:FF2E9A,100:00F5FF&section=footer" width="100%"/>
 
 </div>

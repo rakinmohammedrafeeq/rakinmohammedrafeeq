@@ -13,7 +13,7 @@
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rakinmohammedrafeeq@gmail.com)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/rakinmohammedrafeeq)
 
-<img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20Views&color=58A6FF&style=for-the-badge" alt="profile views"/>
+<!-- <img src="https://komarev.com/ghpvc/?username=rakinmohammedrafeeq&label=Profile%20Views&color=58A6FF&style=for-the-badge" alt="profile views"/> -->
 
 </div>
 

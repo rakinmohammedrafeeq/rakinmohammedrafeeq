@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=%F0%9F%91%8B+Hi%2C+I'm+Rakin+Mohammed+Rafeeq;Building+production-grade+Java+%2B+Spring+Boot+systems;%F0%9F%8F%86+SIH+2025+Winner;AI-Integrated+Full-Stack+Applications" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=%F0%9F%91%8B+Hi%2C+I'm+Rakin+Mohammed+Rafeeq;Building+production-grade+Java+%2B+Spring+Boot+systems;%F0%9F%8F%86+SIH+2025+Winner;AI-Integrated+Full-Stack+Applications" alt="Typing SVG" />
 
 <br/>
 

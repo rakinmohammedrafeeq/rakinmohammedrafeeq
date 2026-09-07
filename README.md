@@ -106,7 +106,7 @@ Autonomous agent that detects payment failures, scores recovery odds with a Rand
 **[Ledgera](https://ledgera-finance-system.vercel.app)** — AI-Powered Finance Platform
 Collaborative multi-workspace finance tracker with an AI agent (tool-calling), a RAG financial advisor over pgvector, receipt OCR, and full RBAC.
 `Java` `Spring Boot` `PostgreSQL` `pgvector` `React` `Groq + Gemini`
-<br/>[![Demo](https://img.shields.io/badge/Live-Demo-blue?style=flat-square)](https://ledgera-finance-system.vercel.app)
+<br/>[![Demo](https://img.shields.io/badge/Live-ledgera--finance--system.vercel.app-blue?style=flat-square)](https://ledgera-finance-system.vercel.app)
 
 </td>
 </tr>

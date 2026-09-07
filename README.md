@@ -51,15 +51,11 @@ fun_fact: Debugs for fun and occasionally forgets to eat while coding
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" /></a>
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://skillicons.dev/icons?i=css" /></a>
 
-<br>
-
 <strong>Backend & Frameworks</strong>
 <br/>
 <a href="https://spring.io/"><img src="https://skillicons.dev/icons?i=spring" /></a>
 <a href="https://nodejs.org/"><img src="https://skillicons.dev/icons?i=nodejs" /></a>
 <a href="https://expressjs.com/"><img src="https://skillicons.dev/icons?i=express" /></a>
-
-<br>
 
 <strong>Frontend</strong>
 <br/>
@@ -67,8 +63,6 @@ fun_fact: Debugs for fun and occasionally forgets to eat while coding
 <a href="https://vite.dev/"><img src="https://skillicons.dev/icons?i=vite" /></a>
 <a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" /></a>
 <a href="https://redux.js.org/"><img src="https://skillicons.dev/icons?i=redux" /></a>
-
-<br>
 
 <strong>Data & Infra</strong>
 <br/>
@@ -80,8 +74,6 @@ fun_fact: Debugs for fun and occasionally forgets to eat while coding
 <a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" /></a>
 <a href="https://nginx.org/"><img src="https://skillicons.dev/icons?i=nginx" /></a>
 <a href="https://firebase.google.com/"><img src="https://skillicons.dev/icons?i=firebase" /></a>
-
-<br>
 
 <strong>AI / Tools</strong>
 <br/>

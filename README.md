@@ -44,45 +44,45 @@ fun_fact: Debugs for fun and occasionally forgets to eat while coding
 
 <strong>Languages & Core</strong>
 <br/>
-<a href="https://www.java.com/"><img src="https://skillicons.dev/icons?i=java" /></a>
-<a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py" /></a>
-<a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" /></a>
+<a href="https://www.java.com/"><img src="https://skillicons.dev/icons?i=java" /></a>&nbsp;
+<a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py" /></a>&nbsp;
+<a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" /></a>&nbsp;
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js" /></a>&nbsp;
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" /></a>&nbsp;
 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://skillicons.dev/icons?i=css" /></a>
 
 <strong>Backend & Frameworks</strong>
 <br/>
-<a href="https://spring.io/"><img src="https://skillicons.dev/icons?i=spring" /></a>
-<a href="https://nodejs.org/"><img src="https://skillicons.dev/icons?i=nodejs" /></a>
+<a href="https://spring.io/"><img src="https://skillicons.dev/icons?i=spring" /></a>&nbsp;
+<a href="https://nodejs.org/"><img src="https://skillicons.dev/icons?i=nodejs" /></a>&nbsp;
 <a href="https://expressjs.com/"><img src="https://skillicons.dev/icons?i=express" /></a>
 
 <strong>Frontend</strong>
 <br/>
-<a href="https://react.dev/"><img src="https://skillicons.dev/icons?i=react" /></a>
-<a href="https://vite.dev/"><img src="https://skillicons.dev/icons?i=vite" /></a>
-<a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" /></a>
+<a href="https://react.dev/"><img src="https://skillicons.dev/icons?i=react" /></a>&nbsp;
+<a href="https://vite.dev/"><img src="https://skillicons.dev/icons?i=vite" /></a>&nbsp;
+<a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" /></a>&nbsp;
 <a href="https://redux.js.org/"><img src="https://skillicons.dev/icons?i=redux" /></a>
 
 <strong>Data & Infra</strong>
 <br/>
-<a href="https://www.postgresql.org/"><img src="https://skillicons.dev/icons?i=postgres" /></a>
-<a href="https://www.mysql.com/"><img src="https://skillicons.dev/icons?i=mysql" /></a>
-<a href="https://www.mongodb.com/"><img src="https://skillicons.dev/icons?i=mongodb" /></a>
-<a href="https://redis.io/"><img src="https://skillicons.dev/icons?i=redis" /></a>
-<a href="https://www.docker.com/"><img src="https://skillicons.dev/icons?i=docker" /></a>
-<a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" /></a>
-<a href="https://nginx.org/"><img src="https://skillicons.dev/icons?i=nginx" /></a>
+<a href="https://www.postgresql.org/"><img src="https://skillicons.dev/icons?i=postgres" /></a>&nbsp;
+<a href="https://www.mysql.com/"><img src="https://skillicons.dev/icons?i=mysql" /></a>&nbsp;
+<a href="https://www.mongodb.com/"><img src="https://skillicons.dev/icons?i=mongodb" /></a>&nbsp;
+<a href="https://redis.io/"><img src="https://skillicons.dev/icons?i=redis" /></a>&nbsp;
+<a href="https://www.docker.com/"><img src="https://skillicons.dev/icons?i=docker" /></a>&nbsp;
+<a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" /></a>&nbsp;
+<a href="https://nginx.org/"><img src="https://skillicons.dev/icons?i=nginx" /></a>&nbsp;
 <a href="https://firebase.google.com/"><img src="https://skillicons.dev/icons?i=firebase" /></a>
 
 <strong>AI / Tools</strong>
 <br/>
-<a href="https://opencv.org/"><img src="https://skillicons.dev/icons?i=opencv" /></a>
-<a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" /></a>
-<a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" /></a>
-<a href="https://github.com/features/actions"><img src="https://skillicons.dev/icons?i=githubactions" /></a>
-<a href="https://www.figma.com/"><img src="https://skillicons.dev/icons?i=figma" /></a>
-<a href="https://www.linux.org/"><img src="https://skillicons.dev/icons?i=linux" /></a>
+<a href="https://opencv.org/"><img src="https://skillicons.dev/icons?i=opencv" /></a>&nbsp;
+<a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" /></a>&nbsp;
+<a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" /></a>&nbsp;
+<a href="https://github.com/features/actions"><img src="https://skillicons.dev/icons?i=githubactions" /></a>&nbsp;
+<a href="https://www.figma.com/"><img src="https://skillicons.dev/icons?i=figma" /></a>&nbsp;
+<a href="https://www.linux.org/"><img src="https://skillicons.dev/icons?i=linux" /></a>&nbsp;
 <a href="https://www.postman.com/"><img src="https://skillicons.dev/icons?i=postman" /></a>
 
 </div>

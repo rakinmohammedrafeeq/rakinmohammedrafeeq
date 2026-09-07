@@ -42,25 +42,56 @@ fun_fact: Debugs for fun and occasionally forgets to eat while coding
 
 <div align="center">
 
-**Languages & Core**
+<strong>Languages & Core</strong>
 <br/>
-<img src="https://skillicons.dev/icons?i=java,py,ts,js,html,css" />
+<a href="https://www.java.com/"><img src="https://skillicons.dev/icons?i=java" /></a>
+<a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py" /></a>
+<a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://skillicons.dev/icons?i=css" /></a>
 
-**Backend & Frameworks**
-<br/>
-<img src="https://skillicons.dev/icons?i=spring,nodejs,express" />
+<br>
 
-**Frontend**
+<strong>Backend & Frameworks</strong>
 <br/>
-<img src="https://skillicons.dev/icons?i=react,vite,tailwind,redux" />
+<a href="https://spring.io/"><img src="https://skillicons.dev/icons?i=spring" /></a>
+<a href="https://nodejs.org/"><img src="https://skillicons.dev/icons?i=nodejs" /></a>
+<a href="https://expressjs.com/"><img src="https://skillicons.dev/icons?i=express" /></a>
 
-**Data & Infra**
-<br/>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,docker,aws,nginx,firebase" />
+<br>
 
-**AI / Tools**
+<strong>Frontend</strong>
 <br/>
-<img src="https://skillicons.dev/icons?i=opencv,git,github,githubactions,figma,linux,postman" />
+<a href="https://react.dev/"><img src="https://skillicons.dev/icons?i=react" /></a>
+<a href="https://vite.dev/"><img src="https://skillicons.dev/icons?i=vite" /></a>
+<a href="https://tailwindcss.com/"><img src="https://skillicons.dev/icons?i=tailwind" /></a>
+<a href="https://redux.js.org/"><img src="https://skillicons.dev/icons?i=redux" /></a>
+
+<br>
+
+<strong>Data & Infra</strong>
+<br/>
+<a href="https://www.postgresql.org/"><img src="https://skillicons.dev/icons?i=postgres" /></a>
+<a href="https://www.mysql.com/"><img src="https://skillicons.dev/icons?i=mysql" /></a>
+<a href="https://www.mongodb.com/"><img src="https://skillicons.dev/icons?i=mongodb" /></a>
+<a href="https://redis.io/"><img src="https://skillicons.dev/icons?i=redis" /></a>
+<a href="https://www.docker.com/"><img src="https://skillicons.dev/icons?i=docker" /></a>
+<a href="https://aws.amazon.com/"><img src="https://skillicons.dev/icons?i=aws" /></a>
+<a href="https://nginx.org/"><img src="https://skillicons.dev/icons?i=nginx" /></a>
+<a href="https://firebase.google.com/"><img src="https://skillicons.dev/icons?i=firebase" /></a>
+
+<br>
+
+<strong>AI / Tools</strong>
+<br/>
+<a href="https://opencv.org/"><img src="https://skillicons.dev/icons?i=opencv" /></a>
+<a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" /></a>
+<a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" /></a>
+<a href="https://github.com/features/actions"><img src="https://skillicons.dev/icons?i=githubactions" /></a>
+<a href="https://www.figma.com/"><img src="https://skillicons.dev/icons?i=figma" /></a>
+<a href="https://www.linux.org/"><img src="https://skillicons.dev/icons?i=linux" /></a>
+<a href="https://www.postman.com/"><img src="https://skillicons.dev/icons?i=postman" /></a>
 
 </div>
 

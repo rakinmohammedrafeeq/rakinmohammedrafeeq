@@ -187,6 +187,7 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 I'm currently locking in on **Java Full-Stack Development** — open to internships, entry-level SDE roles, and interesting collaborations.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-informational?style=for-the-badge)](https://rakinmohammedrafeeq.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-informational?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/rakinmohammedrafeeq)
 [![Email](https://img.shields.io/badge/Email-Reach_Out-informational?style=for-the-badge)](mailto:rakinmohammedrafeeq@gmail.com)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D0221,50:FF2E9A,100:00F5FF&section=footer" width="100%"/>

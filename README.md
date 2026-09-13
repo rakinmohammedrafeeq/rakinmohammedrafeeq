@@ -24,7 +24,7 @@
 ```yaml
 name: Rakin Mohammed Rafeeq
 role: Java Full-Stack Developer (in progress) | AI/ML Enthusiast
-education: B.E. Computer Science (AI/ML), RNS Institute of Technology, Bengaluru — CGPA 8.99/10
+education: B.E. Computer Science (AI/ML), RNS Institute of Technology, Bengaluru
 focus: [Java, Spring Boot, Spring Security, React, PostgreSQL, System Design]
 currently_seeking: Java Backend Developer roles — open to Full-Stack & AI/ML opportunities
 philosophy: "Ship it, break it, fix it, ship it better."

@@ -4,7 +4,9 @@
 
 <div align="center">
 
+<a href="https://rakinmohammedrafeeq.vercel.app">
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=%F0%9F%91%8B+Hi%2C+I'm+Rakin+Mohammed+Rafeeq;Building+production-grade+Java+%2B+Spring+Boot+systems;%F0%9F%8F%86+SIH+2025+Winner;AI-Integrated+Full-Stack+Applications" alt="Typing SVG" />
+<a href="https://rakinmohammedrafeeq.vercel.app">
 
 <br/>
 
@@ -156,7 +158,9 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 
 <div align="center">
 
+<a href="https://github.com/rakinmohammedrafeeq">
 <img src="https://streak-stats.demolab.com?user=rakinmohammedrafeeq&theme=tokyonight&background=0D1117&hide_border=false" alt="GitHub Streak"/>
+</a>
 
 <!--
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=rakinmohammedrafeeq&theme=tokyonight&hide_border=true" alt="streak stats"/>
@@ -200,6 +204,8 @@ I'm currently locking in on **Java Full-Stack Development** — open to internsh
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-informational?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/rakinmohammedrafeeq)
 [![Email](https://img.shields.io/badge/Email-Reach_Out-informational?style=for-the-badge)](mailto:rakinmohammedrafeeq@gmail.com)
 
+<a href="https://rakinmohammedrafeeq.vercel.app">
 <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0D0221,50:FF2E9A,100:00F5FF&section=footer" width="100%"/>
+</a>
 
 </div>

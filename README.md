@@ -25,7 +25,7 @@
 
 ```yaml
 name: Rakin Mohammed Rafeeq
-role: Java Full-Stack Developer (in progress) | AI/ML Enthusiast
+role: Java Full-Stack Developer | AI/ML Enthusiast
 education: B.E. Computer Science (AI/ML), RNS Institute of Technology, Bengaluru
 focus: [Java, Spring Boot, Spring Security, React, PostgreSQL, System Design]
 currently_seeking: Java Backend Developer roles — open to Full-Stack & AI/ML opportunities
@@ -172,10 +172,21 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 </a>
 -->
 
+<br/><br/>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/rakinmohammedrafeeq/rakinmohammedrafeeq/output/pacman-contribution-graph-dark.svg"
+  >
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/rakinmohammedrafeeq/rakinmohammedrafeeq/output/pacman-contribution-graph.svg"
+  >
+  <img
+    alt="Pac-Man contribution graph"
+    src="https://raw.githubusercontent.com/rakinmohammedrafeeq/rakinmohammedrafeeq/output/pacman-contribution-graph.svg"
+  >
 </picture>
 
 </div>

@@ -172,6 +172,12 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 </a>
 -->
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Arul1998/Arul1998/main/assets/pacman-contribution-graph.svg">
+</picture>
+
 </div>
 
 ---

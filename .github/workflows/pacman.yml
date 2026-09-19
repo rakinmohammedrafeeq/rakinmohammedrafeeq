@@ -20,31 +20,6 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-        
-      - name: Crop bottom whitespace
-        run: |
-          python - <<'PY'
-          import re
-          from pathlib import Path
-
-          CROP_PX = 17  # measured dead space at the bottom of the canvas
-
-          for file in Path("dist").glob("*.svg"):
-              text = file.read_text()
-
-              match = re.search(r'(<svg\b[^>]*\bheight=")([0-9.]+)(")', text)
-              if not match:
-                  print(f"No height attribute found in root <svg>: {file}")
-                  continue
-
-              old_height = float(match.group(2))
-              new_height = max(1, old_height - CROP_PX)
-
-              text = text[:match.start(2)] + f"{new_height:g}" + text[match.end(2):]
-              file.write_text(text)
-
-              print(f"Cropped {file}: {old_height:g}px -> {new_height:g}px")
-          PY
 
       - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0

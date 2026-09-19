@@ -38,7 +38,7 @@ jobs:
               x, y, width, height = map(float, match.group(1).split())
 
               # Crop 20px from the bottom
-              height = max(1, height - 45)
+              height = max(1, height - 1000)
 
               new_viewbox = f'{x:g} {y:g} {width:g} {height:g}'
 

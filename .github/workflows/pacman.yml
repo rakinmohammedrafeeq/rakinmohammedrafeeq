@@ -21,6 +21,37 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
 
+      - name: Crop bottom whitespace
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+
+          for file in Path("dist").glob("*.svg"):
+              text = file.read_text()
+
+              match = re.search(r'viewBox="([^"]+)"', text)
+              if not match:
+                  print(f"No viewBox found: {file}")
+                  continue
+
+              x, y, width, height = map(float, match.group(1).split())
+
+              # Crop 20px from the bottom
+              height = max(1, height - 20)
+
+              new_viewbox = f'{x:g} {y:g} {width:g} {height:g}'
+
+              text = (
+                  text[:match.start(1)]
+                  + new_viewbox
+                  + text[match.end(1):]
+              )
+
+              file.write_text(text)
+              print(f"Cropped {file} -> {new_viewbox}")
+          PY
+
       - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

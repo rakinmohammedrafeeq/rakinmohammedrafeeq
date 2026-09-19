@@ -21,10 +21,6 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      - name: Trim bottom whitespace from SVGs
-        run: |
-          perl -0777 -pi -e 's/<svg width="(\d+)" height="(\d+)"/"<svg width=\"$1\" height=\"".($2-15)."\""/e' dist/pacman-contribution-graph.svg dist/pacman-contribution-graph-dark.svg
-
       - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:

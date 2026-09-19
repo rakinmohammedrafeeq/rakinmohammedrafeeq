@@ -172,7 +172,7 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 </a>
 -->
 
-<br/><br/>
+<br/>
 
 <picture>
   <source

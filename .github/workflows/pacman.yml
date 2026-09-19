@@ -20,87 +20,30 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-
+        
       - name: Crop bottom whitespace
         run: |
           python - <<'PY'
           import re
           from pathlib import Path
 
+          CROP_PX = 17  # measured dead space at the bottom of the canvas
+
           for file in Path("dist").glob("*.svg"):
               text = file.read_text()
 
-              svg_match = re.search(r'<svg\b([^>]*)>', text)
-              if not svg_match:
+              match = re.search(r'(<svg\b[^>]*\bheight=")([0-9.]+)(")', text)
+              if not match:
+                  print(f"No height attribute found in root <svg>: {file}")
                   continue
 
-              svg_tag = svg_match.group(0)
+              old_height = float(match.group(2))
+              new_height = max(1, old_height - CROP_PX)
 
-              viewbox = re.search(
-                  r'viewBox=["\']([^"\']+)["\']',
-                  svg_tag
-              )
-
-              if not viewbox:
-                  print(f"No viewBox found: {file}")
-                  continue
-
-              x, y, width, height = map(
-                  float,
-                  viewbox.group(1).split()
-              )
-
-              # Amount of bottom whitespace to remove
-              crop = 100
-
-              new_height = max(1, height - crop)
-
-              # Update viewBox
-              new_viewbox = (
-                  f"{x:g} {y:g} {width:g} {new_height:g}"
-              )
-
-              svg_tag = (
-                  svg_tag[:viewbox.start(1)]
-                  + new_viewbox
-                  + svg_tag[viewbox.end(1):]
-              )
-
-              # Update explicit SVG height if present
-              height_attr = re.search(
-                  r'\bheight=["\']([0-9.]+)(?:px)?["\']',
-                  svg_tag
-              )
-
-              if height_attr:
-                  old_render_height = float(
-                      height_attr.group(1)
-                  )
-
-                  new_render_height = (
-                      old_render_height
-                      * new_height
-                      / height
-                  )
-
-                  svg_tag = (
-                      svg_tag[:height_attr.start(1)]
-                      + f"{new_render_height:g}"
-                      + svg_tag[height_attr.end(1):]
-                  )
-
-              text = (
-                  text[:svg_match.start()]
-                  + svg_tag
-                  + text[svg_match.end():]
-              )
-
+              text = text[:match.start(2)] + f"{new_height:g}" + text[match.end(2):]
               file.write_text(text)
 
-              print(
-                  f"Cropped {file}: "
-                  f"{height:g}px -> {new_height:g}px"
-              )
+              print(f"Cropped {file}: {old_height:g}px -> {new_height:g}px")
           PY
 
       - name: Push SVGs to output branch

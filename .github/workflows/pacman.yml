@@ -30,26 +30,77 @@ jobs:
           for file in Path("dist").glob("*.svg"):
               text = file.read_text()
 
-              match = re.search(r'viewBox="([^"]+)"', text)
-              if not match:
+              svg_match = re.search(r'<svg\b([^>]*)>', text)
+              if not svg_match:
+                  continue
+
+              svg_tag = svg_match.group(0)
+
+              viewbox = re.search(
+                  r'viewBox=["\']([^"\']+)["\']',
+                  svg_tag
+              )
+
+              if not viewbox:
                   print(f"No viewBox found: {file}")
                   continue
 
-              x, y, width, height = map(float, match.group(1).split())
+              x, y, width, height = map(
+                  float,
+                  viewbox.group(1).split()
+              )
 
-              # Crop 20px from the bottom
-              height = max(1, height - 1000)
+              # Amount of bottom whitespace to remove
+              crop = 100
 
-              new_viewbox = f'{x:g} {y:g} {width:g} {height:g}'
+              new_height = max(1, height - crop)
+
+              # Update viewBox
+              new_viewbox = (
+                  f"{x:g} {y:g} {width:g} {new_height:g}"
+              )
+
+              svg_tag = (
+                  svg_tag[:viewbox.start(1)]
+                  + new_viewbox
+                  + svg_tag[viewbox.end(1):]
+              )
+
+              # Update explicit SVG height if present
+              height_attr = re.search(
+                  r'\bheight=["\']([0-9.]+)(?:px)?["\']',
+                  svg_tag
+              )
+
+              if height_attr:
+                  old_render_height = float(
+                      height_attr.group(1)
+                  )
+
+                  new_render_height = (
+                      old_render_height
+                      * new_height
+                      / height
+                  )
+
+                  svg_tag = (
+                      svg_tag[:height_attr.start(1)]
+                      + f"{new_render_height:g}"
+                      + svg_tag[height_attr.end(1):]
+                  )
 
               text = (
-                  text[:match.start(1)]
-                  + new_viewbox
-                  + text[match.end(1):]
+                  text[:svg_match.start()]
+                  + svg_tag
+                  + text[svg_match.end():]
               )
 
               file.write_text(text)
-              print(f"Cropped {file} -> {new_viewbox}")
+
+              print(
+                  f"Cropped {file}: "
+                  f"{height:g}px -> {new_height:g}px"
+              )
           PY
 
       - name: Push SVGs to output branch

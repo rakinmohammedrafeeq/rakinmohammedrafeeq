@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Sync the Pac-Man SVG contribution-cell palette with GitHub's live palette.
+"""Mirror GitHub's live contribution-calendar colours in Pac-Man SVGs.
 
-The upstream Pac-Man action currently renders fixed GitHub light/dark palettes.
-This script changes only the four contribution intensity fills (L1-L4).
-Empty-cell backgrounds, Pac-Man, ghosts, paths, and labels are left untouched.
+Only the animated contribution-cell colours are changed. Static empty-cell
+fills, SVG backgrounds, maze walls, Pac-Man, ghosts, and labels are untouched.
 """
 
 from __future__ import annotations
@@ -23,36 +22,43 @@ query($login: String!) {
     contributionsCollection {
       contributionCalendar {
         colors
-        isHalloween
       }
     }
   }
 }
 """
 
-# The built-in theme palettes contain five entries:
-# [empty-cell background, L1, L2, L3, L4].
-# GitHub's GraphQL calendar palette normally provides the four contribution
-# colours (L1-L4); some responses may also include the neutral background.
-BUILT_IN_PALETTES = {
-    "github-light": [
-        "#ebedf0",
-        "#9be9a8",
-        "#40c463",
-        "#30a14e",
-        "#216e39",
-    ],
-    "github-dark": [
-        "#161b22",
-        "#0e4429",
-        "#006d32",
-        "#26a641",
-        "#39d353",
-    ],
+# Source contribution-level colours emitted by the upstream Pac-Man action.
+# Each maps to a GitHub intensity level in ascending order: L1, L2, L3, L4.
+# These are the action's current built-in GitHub light and dark palettes.
+SOURCE_LEVELS = {
+    "#9be9a8": 0,  # light L1
+    "#40c463": 1,  # light L2
+    "#30a14e": 2,  # light L3
+    "#216e39": 3,  # light L4
+    "#0e4429": 0,  # dark L1
+    "#006d32": 1,  # dark L2
+    "#26a641": 2,  # dark L3
+    "#39d353": 3,  # dark L4
 }
 
+# The upstream generator identifies contribution-day rectangles as c-WEEK-DAY.
+CELL_RECT_RE = re.compile(
+    r"<rect\b(?=[^>]*\bid\s*=\s*(['\"])c-\d+-\d+\1)[^>]*>.*?</rect>",
+    re.IGNORECASE | re.DOTALL,
+)
+ANIMATE_TAG_RE = re.compile(r"<animate\b[^>]*>", re.IGNORECASE | re.DOTALL)
+ATTRIBUTE_NAME_RE = re.compile(
+    r"\battributeName\s*=\s*(['\"])fill\1", re.IGNORECASE
+)
+VALUES_RE = re.compile(
+    r"(\bvalues\s*=\s*)(['\"])(.*?)\2", re.IGNORECASE | re.DOTALL
+)
+HEX_COLOR_RE = re.compile(r"#[0-9a-fA-F]{6}")
 
-def fetch_github_palette(username: str, token: str) -> tuple[list[str], bool]:
+
+def fetch_github_palette(username: str, token: str) -> list[str]:
+    """Fetch the four live contribution intensity colours from GitHub."""
     payload = json.dumps(
         {"query": QUERY, "variables": {"login": username}}
     ).encode("utf-8")
@@ -88,38 +94,93 @@ def fetch_github_palette(username: str, token: str) -> tuple[list[str], bool]:
 
     calendar = user["contributionsCollection"]["contributionCalendar"]
     colors = calendar.get("colors", [])
-    if len(colors) not in (4, 5) or not all(
-        isinstance(color, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", color)
+
+    # GitHub's calendar exposes four non-empty contribution intensity shades.
+    if len(colors) != 4 or not all(
+        isinstance(color, str) and HEX_COLOR_RE.fullmatch(color)
         for color in colors
     ):
         raise RuntimeError(
-            "Expected GitHub's contribution calendar to return four intensity "
-            "colours (optionally preceded by the empty-cell colour); "
-            f"received: {colors!r}"
+            "Expected GitHub's contribution calendar to return four "
+            f"hex intensity colours (L1-L4); received: {colors!r}"
         )
 
-    # The SVG generator has five colours per theme: background + L1-L4.
-    # GitHub's current Halloween response contains exactly L1-L4. If an API
-    # response includes a fifth neutral/background colour, drop that first
-    # entry so that only the four contribution shades are mapped below.
-    intensity_colors = colors[-4:]
-    return [color.lower() for color in intensity_colors], bool(calendar.get("isHalloween"))
+    # API order is least to most contribution intensity.
+    return [color.lower() for color in colors]
 
 
-def replace_fill(svg: str, old: str, new: str) -> tuple[str, int]:
-    """Replace a palette colour only when used as an SVG fill."""
-    escaped = re.escape(old)
-    patterns = (
-        # fill="#abcdef" or fill='#abcdef'
-        re.compile(rf"(?i)(\bfill\s*=\s*['\"]){escaped}(['\"])") ,
-        # inline style="...fill:#abcdef..." or style='...'
-        re.compile(rf"(?i)(\bfill\s*:\s*){escaped}(?=\s*[;\"'])"),
-    )
-    count = 0
-    for pattern in patterns:
-        svg, replaced = pattern.subn(lambda match: match.group(1) + new + (match.group(2) if len(match.groups()) > 1 else ""), svg)
-        count += replaced
-    return svg, count
+def recolor_svg(svg_text: str, target_colors: list[str], file_name: str) -> tuple[str, int]:
+    """Replace only the first animated fill on each contribution-cell rect."""
+    stats = [0, 0, 0, 0]
+    matched_cells = 0
+    unknown_colors: set[str] = set()
+
+    def update_cell(cell_match: re.Match[str]) -> str:
+        nonlocal matched_cells
+        cell_block = cell_match.group(0)
+
+        def update_animation(animation_match: re.Match[str]) -> str:
+            nonlocal matched_cells
+            tag = animation_match.group(0)
+
+            if not ATTRIBUTE_NAME_RE.search(tag):
+                return tag
+
+            values_match = VALUES_RE.search(tag)
+            if not values_match:
+                return tag
+
+            values_text = values_match.group(3)
+            values = values_text.split(";")
+            if not values or not values[0].strip():
+                return tag
+
+            original_first = values[0]
+            source_color = original_first.strip().lower()
+            level = SOURCE_LEVELS.get(source_color)
+            if level is None:
+                unknown_colors.add(source_color)
+                return tag
+
+            # Replace ONLY the animated active-contribution colour (the first
+            # item). Later values are the empty-cell/reset colour and stay put.
+            leading = original_first[: len(original_first) - len(original_first.lstrip())]
+            trailing = original_first[len(original_first.rstrip()):]
+            values[0] = f"{leading}{target_colors[level]}{trailing}"
+            new_values_text = ";".join(values)
+
+            new_tag = (
+                tag[: values_match.start(3)]
+                + new_values_text
+                + tag[values_match.end(3):]
+            )
+            matched_cells += 1
+            stats[level] += 1
+            return new_tag
+
+        return ANIMATE_TAG_RE.sub(update_animation, cell_block)
+
+    updated = CELL_RECT_RE.sub(update_cell, svg_text)
+
+    if matched_cells == 0:
+        detail = (
+            f" Unrecognized animated contribution colours: "
+            f"{', '.join(sorted(unknown_colors))}."
+            if unknown_colors else ""
+        )
+        raise RuntimeError(
+            f"No known animated contribution cells were found in {file_name}."
+            " The SVG was not changed; the upstream generator's SVG structure "
+            f"or built-in palette may have changed.{detail}"
+        )
+
+    if unknown_colors:
+        raise RuntimeError(
+            f"Unknown contribution-cell source colours in {file_name}: "
+            f"{', '.join(sorted(unknown_colors))}. No files were written."
+        )
+
+    return updated, matched_cells
 
 
 def main() -> int:
@@ -140,43 +201,24 @@ def main() -> int:
         return 2
 
     try:
-        target_colors, is_halloween = fetch_github_palette(username, token)
+        target_colors = fetch_github_palette(username, token)
+        print("GitHub's live contribution palette (L1 → L4): " + ", ".join(target_colors))
+
+        # Prepare every file in memory first. If any SVG is incompatible, no
+        # output file is partially updated.
+        prepared: list[tuple[Path, str, int]] = []
+        for svg_path in svg_files:
+            original = svg_path.read_text(encoding="utf-8")
+            updated, count = recolor_svg(original, target_colors, svg_path.name)
+            prepared.append((svg_path, updated, count))
+
     except (RuntimeError, KeyError, TypeError, ValueError) as exc:
-        print(f"Could not fetch GitHub's contribution palette: {exc}", file=sys.stderr)
+        print(f"Could not synchronize Pac-Man colours: {exc}", file=sys.stderr)
         return 1
 
-    print(
-        "GitHub palette detected: "
-        + ("Halloween" if is_halloween else "regular")
-        + " — "
-        + ", ".join(target_colors)
-    )
-
-    source_to_target: dict[str, str] = {}
-    for palette in BUILT_IN_PALETTES.values():
-        # Keep palette[0] (the empty-cell background) unchanged. Replace only
-        # the four contribution levels, from least (L1) to most (L4).
-        source_to_target.update(dict(zip(palette[1:], target_colors)))
-
-    for svg_path in svg_files:
-        original = svg_path.read_text(encoding="utf-8")
-        updated = original
-        total_replacements = 0
-        for old_color, new_color in source_to_target.items():
-            updated, count = replace_fill(updated, old_color, new_color)
-            total_replacements += count
-
-        if total_replacements == 0:
-            print(
-                f"No known contribution fills were found in {svg_path}. "
-                "The SVG was not changed; check whether the upstream action "
-                "has changed its built-in palette.",
-                file=sys.stderr,
-            )
-            return 1
-
+    for svg_path, updated, count in prepared:
         svg_path.write_text(updated, encoding="utf-8")
-        print(f"Updated {svg_path}: {total_replacements} fill(s) recoloured.")
+        print(f"Updated {svg_path}: {count} animated contribution cell(s) recoloured.")
 
     return 0
 

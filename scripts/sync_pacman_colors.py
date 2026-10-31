@@ -2,8 +2,8 @@
 """Sync the Pac-Man SVG contribution-cell palette with GitHub's live palette.
 
 The upstream Pac-Man action currently renders fixed GitHub light/dark palettes.
-This script changes only SVG fill colours belonging to those five contribution
-levels. Pac-Man, ghosts, paths, labels, and backgrounds are left untouched.
+This script changes only the four contribution intensity fills (L1-L4).
+Empty-cell backgrounds, Pac-Man, ghosts, paths, and labels are left untouched.
 """
 
 from __future__ import annotations
@@ -30,8 +30,10 @@ query($login: String!) {
 }
 """
 
-# The five contribution levels used by the generator's built-in themes:
-# NONE, FIRST_QUARTILE, SECOND_QUARTILE, THIRD_QUARTILE, FOURTH_QUARTILE.
+# The built-in theme palettes contain five entries:
+# [empty-cell background, L1, L2, L3, L4].
+# GitHub's GraphQL calendar palette normally provides the four contribution
+# colours (L1-L4); some responses may also include the neutral background.
 BUILT_IN_PALETTES = {
     "github-light": [
         "#ebedf0",
@@ -86,16 +88,22 @@ def fetch_github_palette(username: str, token: str) -> tuple[list[str], bool]:
 
     calendar = user["contributionsCollection"]["contributionCalendar"]
     colors = calendar.get("colors", [])
-    if len(colors) != 5 or not all(
+    if len(colors) not in (4, 5) or not all(
         isinstance(color, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", color)
         for color in colors
     ):
         raise RuntimeError(
-            "Expected GitHub's contribution calendar to return five hex colours; "
+            "Expected GitHub's contribution calendar to return four intensity "
+            "colours (optionally preceded by the empty-cell colour); "
             f"received: {colors!r}"
         )
 
-    return [color.lower() for color in colors], bool(calendar.get("isHalloween"))
+    # The SVG generator has five colours per theme: background + L1-L4.
+    # GitHub's current Halloween response contains exactly L1-L4. If an API
+    # response includes a fifth neutral/background colour, drop that first
+    # entry so that only the four contribution shades are mapped below.
+    intensity_colors = colors[-4:]
+    return [color.lower() for color in intensity_colors], bool(calendar.get("isHalloween"))
 
 
 def replace_fill(svg: str, old: str, new: str) -> tuple[str, int]:
@@ -146,7 +154,9 @@ def main() -> int:
 
     source_to_target: dict[str, str] = {}
     for palette in BUILT_IN_PALETTES.values():
-        source_to_target.update(dict(zip(palette, target_colors)))
+        # Keep palette[0] (the empty-cell background) unchanged. Replace only
+        # the four contribution levels, from least (L1) to most (L4).
+        source_to_target.update(dict(zip(palette[1:], target_colors)))
 
     for svg_path in svg_files:
         original = svg_path.read_text(encoding="utf-8")

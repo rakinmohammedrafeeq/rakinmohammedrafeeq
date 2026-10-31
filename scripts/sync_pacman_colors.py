@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Mirror GitHub's live contribution-calendar colours in Pac-Man SVGs.
+"""Mirror GitHub's exact per-day contribution colours in Pac-Man SVGs.
 
-Only animated contribution-cell colours are changed, plus a redundant first
-month label when it duplicates the final month label. Static empty-cell fills,
-SVG backgrounds, maze walls, Pac-Man, ghosts, and all other labels are untouched.
+The upstream Pac-Man action uses its own built-in palette. Rather than trying
+to infer contribution intensity from those source colours, this script fetches
+the colour assigned to every date by GitHub's GraphQL contribution calendar
+and applies that exact colour to the matching SVG cell (c-WEEK-WEEKDAY).
+
+Only the first value of each contribution cell's animated fill is changed.
+Empty-cell/reset fills, static cell backgrounds, maze walls, Pac-Man, ghosts,
+and all other SVG artwork remain untouched.
 """
 
 from __future__ import annotations
@@ -15,6 +20,7 @@ import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
+from typing import Any
 
 GRAPHQL_URL = "https://api.github.com/graphql"
 QUERY = """
@@ -23,46 +29,44 @@ query($login: String!) {
     contributionsCollection {
       contributionCalendar {
         colors
+        isHalloween
+        weeks {
+          contributionDays {
+            color
+            contributionCount
+            date
+            weekday
+          }
+        }
       }
     }
   }
 }
 """
 
-# Source contribution-level colours emitted by the upstream Pac-Man action.
-# Each maps to a GitHub intensity level in ascending order: L1, L2, L3, L4.
-# These are the action's current built-in GitHub light and dark palettes.
-SOURCE_LEVELS = {
-    "#9be9a8": 0,  # light L1
-    "#40c463": 1,  # light L2
-    "#30a14e": 2,  # light L3
-    "#216e39": 3,  # light L4
-    "#0e4429": 0,  # dark L1
-    "#006d32": 1,  # dark L2
-    "#26a641": 2,  # dark L3
-    "#39d353": 3,  # dark L4
-}
-
-# The upstream generator identifies contribution-day rectangles as c-WEEK-DAY.
+HEX_COLOR_RE = re.compile(r"#[0-9a-fA-F]{6}")
 CELL_RECT_RE = re.compile(
-    r"<rect\b(?=[^>]*\bid\s*=\s*(['\"])c-\d+-\d+\1)[^>]*>.*?</rect>",
+    r"<rect\b(?P<attrs>[^>]*)>(?P<body>.*?)</rect>",
     re.IGNORECASE | re.DOTALL,
 )
+CELL_ID_RE = re.compile(r"""\bid\s*=\s*(["'])c-(\d+)-(\d+)\1""", re.IGNORECASE)
 ANIMATE_TAG_RE = re.compile(r"<animate\b[^>]*>", re.IGNORECASE | re.DOTALL)
-ATTRIBUTE_NAME_RE = re.compile(
-    r"\battributeName\s*=\s*(['\"])fill\1", re.IGNORECASE
+ATTRIBUTE_NAME_RE = re.compile(r"""\battributeName\s*=\s*(["'])fill\1""", re.IGNORECASE)
+VALUES_RE = re.compile(r"""(\bvalues\s*=\s*)(["'])(.*?)\2""", re.IGNORECASE | re.DOTALL)
+
+MONTH_NAMES = {
+    "jan", "feb", "mar", "apr", "may", "jun",
+    "jul", "aug", "sep", "oct", "nov", "dec",
+}
+MONTH_TEXT_RE = re.compile(
+    r"<text\b(?P<attrs>[^>]*)>(?P<label>[^<]*)</text>",
+    re.IGNORECASE | re.DOTALL,
 )
-VALUES_RE = re.compile(
-    r"(\bvalues\s*=\s*)(['\"])(.*?)\2", re.IGNORECASE | re.DOTALL
-)
-HEX_COLOR_RE = re.compile(r"#[0-9a-fA-F]{6}")
-MONTH_NAMES = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"}
-MONTH_TEXT_RE = re.compile(r"<text\b(?P<attrs>[^>]*)>(?P<label>[^<]*)</text>", re.IGNORECASE | re.DOTALL)
 
 
 def _svg_attr(attrs: str, name: str) -> str | None:
     match = re.search(
-        rf"\b{re.escape(name)}\s*=\s*([\"'])(.*?)\1",
+        rf"""\b{re.escape(name)}\s*=\s*(["'])(.*?)\1""",
         attrs,
         re.IGNORECASE | re.DOTALL,
     )
@@ -70,29 +74,27 @@ def _svg_attr(attrs: str, name: str) -> str | None:
 
 
 def remove_duplicate_boundary_month_label(svg_text: str) -> tuple[str, bool]:
-    """Remove the first month label when it duplicates the final month label.
-
-    The upstream graph can show 13 month labels for a rolling year (for example,
-    Oct through Oct). Keep the final/current month label and remove only the
-    redundant left-edge label. Contribution data and SVG geometry are untouched.
-    """
+    """Remove the first month label only when it duplicates the final label."""
     month_matches: list[tuple[re.Match[str], str, float]] = []
+
     for match in MONTH_TEXT_RE.finditer(svg_text):
         label = match.group("label").strip().lower()
         if label not in MONTH_NAMES:
             continue
+
         attrs = match.group("attrs")
         y_value = _svg_attr(attrs, "y")
         x_value = _svg_attr(attrs, "x")
         if y_value is None or x_value is None:
             continue
+
         try:
-            # Month labels sit on the top row. Restrict the edit to that row.
             if abs(float(y_value) - 10.0) > 0.1:
                 continue
             x = float(x_value)
         except ValueError:
             continue
+
         month_matches.append((match, label, x))
 
     if len(month_matches) < 2:
@@ -105,14 +107,16 @@ def remove_duplicate_boundary_month_label(svg_text: str) -> tuple[str, bool]:
             svg_text[:first_match.start()] + svg_text[first_match.end():],
             True,
         )
+
     return svg_text, False
 
 
-def fetch_github_palette(username: str, token: str) -> list[str]:
-    """Fetch the four live contribution intensity colours from GitHub."""
+def fetch_contribution_calendar(username: str, token: str) -> dict[str, Any]:
+    """Fetch GitHub's contribution calendar, including each day's exact color."""
     payload = json.dumps(
         {"query": QUERY, "variables": {"login": username}}
     ).encode("utf-8")
+
     request = urllib.request.Request(
         GRAPHQL_URL,
         data=payload,
@@ -143,32 +147,86 @@ def fetch_github_palette(username: str, token: str) -> list[str]:
     if not user:
         raise RuntimeError(f"GitHub user '{username}' was not found.")
 
-    calendar = user["contributionsCollection"]["contributionCalendar"]
-    colors = calendar.get("colors", [])
-
-    # GitHub's calendar exposes four non-empty contribution intensity shades.
-    if len(colors) != 4 or not all(
-        isinstance(color, str) and HEX_COLOR_RE.fullmatch(color)
-        for color in colors
-    ):
+    try:
+        calendar = user["contributionsCollection"]["contributionCalendar"]
+    except (KeyError, TypeError) as exc:
         raise RuntimeError(
-            "Expected GitHub's contribution calendar to return four "
-            f"hex intensity colours (L1-L4); received: {colors!r}"
-        )
+            "GitHub GraphQL response did not contain a contribution calendar."
+        ) from exc
 
-    # API order is least to most contribution intensity.
-    return [color.lower() for color in colors]
+    if not isinstance(calendar.get("weeks"), list) or not calendar["weeks"]:
+        raise RuntimeError("GitHub returned an empty contribution calendar.")
+
+    return calendar
 
 
-def recolor_svg(svg_text: str, target_colors: list[str], file_name: str) -> tuple[str, int]:
-    """Replace only the first animated fill on each contribution-cell rect."""
-    stats = [0, 0, 0, 0]
+def build_day_color_map(calendar: dict[str, Any]) -> dict[tuple[int, int], str]:
+    """Return {(week_index, weekday_index): GitHub's exact day color}."""
+    day_colors: dict[tuple[int, int], str] = {}
+
+    for week_index, week in enumerate(calendar["weeks"]):
+        days = week.get("contributionDays", [])
+        if not isinstance(days, list):
+            raise RuntimeError(f"Invalid contributionDays in week {week_index}.")
+
+        for day in days:
+            try:
+                weekday = int(day["weekday"])
+                color = str(day["color"]).lower()
+                contribution_count = int(day["contributionCount"])
+            except (KeyError, TypeError, ValueError) as exc:
+                raise RuntimeError(
+                    f"Invalid contribution day data in week {week_index}: {day!r}"
+                ) from exc
+
+            if weekday < 0 or weekday > 6:
+                raise RuntimeError(
+                    f"GitHub returned invalid weekday {weekday} in week {week_index}."
+                )
+            if not HEX_COLOR_RE.fullmatch(color):
+                raise RuntimeError(
+                    f"GitHub returned an invalid day colour {color!r}."
+                )
+
+            key = (week_index, weekday)
+            if key in day_colors:
+                raise RuntimeError(f"Duplicate GitHub contribution day key: {key}.")
+
+            day_colors[key] = color
+
+    if not day_colors:
+        raise RuntimeError("GitHub returned no contribution-day colours.")
+
+    return day_colors
+
+
+def recolor_svg(
+    svg_text: str,
+    day_colors: dict[tuple[int, int], str],
+    file_name: str,
+) -> tuple[str, int]:
+    """Apply each GitHub day's color to its matching animated SVG cell."""
     matched_cells = 0
-    unknown_colors: set[str] = set()
+    missing_day_keys: set[tuple[int, int]] = set()
+    replaced_colors: set[str] = set()
 
     def update_cell(cell_match: re.Match[str]) -> str:
         nonlocal matched_cells
-        cell_block = cell_match.group(0)
+
+        attrs = cell_match.group("attrs")
+        id_match = CELL_ID_RE.search(attrs)
+        if not id_match:
+            return cell_match.group(0)
+
+        week_index = int(id_match.group(2))
+        weekday = int(id_match.group(3))
+        key = (week_index, weekday)
+        body = cell_match.group("body")
+        day_color = day_colors.get(key)
+
+        if day_color is None:
+            missing_day_keys.add(key)
+            return cell_match.group(0)
 
         def update_animation(animation_match: re.Match[str]) -> str:
             nonlocal matched_cells
@@ -181,56 +239,48 @@ def recolor_svg(svg_text: str, target_colors: list[str], file_name: str) -> tupl
             if not values_match:
                 return tag
 
-            values_text = values_match.group(3)
-            values = values_text.split(";")
-            if not values or not values[0].strip():
+            parts = values_match.group(3).split(";")
+            if not parts or not parts[0].strip():
                 return tag
 
-            original_first = values[0]
-            source_color = original_first.strip().lower()
-            level = SOURCE_LEVELS.get(source_color)
-            if level is None:
-                unknown_colors.add(source_color)
-                return tag
+            # The first value is the active contribution fill. Keep all later
+            # values unchanged; they control the empty/reset animation state.
+            parts[0] = day_color
+            new_values = ";".join(parts)
+            matched_cells += 1
+            replaced_colors.add(day_color)
 
-            # Replace ONLY the animated active-contribution colour (the first
-            # item). Later values are the empty-cell/reset colour and stay put.
-            leading = original_first[: len(original_first) - len(original_first.lstrip())]
-            trailing = original_first[len(original_first.rstrip()):]
-            values[0] = f"{leading}{target_colors[level]}{trailing}"
-            new_values_text = ";".join(values)
-
-            new_tag = (
+            return (
                 tag[: values_match.start(3)]
-                + new_values_text
+                + new_values
                 + tag[values_match.end(3):]
             )
-            matched_cells += 1
-            stats[level] += 1
-            return new_tag
 
-        return ANIMATE_TAG_RE.sub(update_animation, cell_block)
+        new_body = ANIMATE_TAG_RE.sub(update_animation, body)
+        return cell_match.group(0)[: cell_match.start("body") - cell_match.start()] + new_body + cell_match.group(0)[cell_match.end("body") - cell_match.start():]
 
     updated = CELL_RECT_RE.sub(update_cell, svg_text)
 
+    if missing_day_keys:
+        preview = ", ".join(
+            f"week {week}/weekday {day}"
+            for week, day in sorted(missing_day_keys)[:8]
+        )
+        raise RuntimeError(
+            f"{file_name}: SVG cells did not match GitHub calendar days: {preview}. "
+            "No SVG files were written."
+        )
+
     if matched_cells == 0:
-        detail = (
-            f" Unrecognized animated contribution colours: "
-            f"{', '.join(sorted(unknown_colors))}."
-            if unknown_colors else ""
-        )
         raise RuntimeError(
-            f"No known animated contribution cells were found in {file_name}."
-            " The SVG was not changed; the upstream generator's SVG structure "
-            f"or built-in palette may have changed.{detail}"
+            f"{file_name}: no animated contribution cells were found. "
+            "The generated SVG structure may have changed."
         )
 
-    if unknown_colors:
-        raise RuntimeError(
-            f"Unknown contribution-cell source colours in {file_name}: "
-            f"{', '.join(sorted(unknown_colors))}. No files were written."
-        )
-
+    print(
+        f"{file_name}: updated {matched_cells} contribution cell(s) "
+        f"using {len(replaced_colors)} exact GitHub day colour(s)."
+    )
     return updated, matched_cells
 
 
@@ -240,10 +290,17 @@ def main() -> int:
     dist_dir = Path("dist")
 
     if not username or not token:
-        print("GITHUB_USER_NAME and GITHUB_TOKEN are required.", file=sys.stderr)
+        print(
+            "GITHUB_USER_NAME and GITHUB_TOKEN are required.",
+            file=sys.stderr,
+        )
         return 2
+
     if not dist_dir.is_dir():
-        print("The generator output directory 'dist/' was not found.", file=sys.stderr)
+        print(
+            "The generator output directory 'dist/' was not found.",
+            file=sys.stderr,
+        )
         return 2
 
     svg_files = sorted(dist_dir.glob("*.svg"))
@@ -252,27 +309,45 @@ def main() -> int:
         return 2
 
     try:
-        target_colors = fetch_github_palette(username, token)
-        print("GitHub's live contribution palette (L1 → L4): " + ", ".join(target_colors))
+        calendar = fetch_contribution_calendar(username, token)
+        day_colors = build_day_color_map(calendar)
+        palette = calendar.get("colors", [])
+        print(
+            "Fetched GitHub's live contribution calendar: "
+            f"{len(calendar['weeks'])} week(s), "
+            f"{len(day_colors)} day(s), "
+            f"{len(palette)} palette colour(s), "
+            f"isHalloween={calendar.get('isHalloween', False)}."
+        )
 
-        # Prepare every file in memory first. If any SVG is incompatible, no
-        # output file is partially updated.
+        # Prepare all SVGs in memory first. If one file cannot be mapped,
+        # leave every output file untouched.
         prepared: list[tuple[Path, str, int]] = []
+
         for svg_path in svg_files:
             original = svg_path.read_text(encoding="utf-8")
-            updated, count = recolor_svg(original, target_colors, svg_path.name)
-            updated, removed_leading_month = remove_duplicate_boundary_month_label(updated)
-            if removed_leading_month:
-                print(f"Removed duplicated leading {svg_path.name} month label.")
+            updated, count = recolor_svg(
+                original,
+                day_colors,
+                svg_path.name,
+            )
+            updated, removed_label = remove_duplicate_boundary_month_label(updated)
+            if removed_label:
+                print(
+                    f"{svg_path.name}: removed duplicate leading month label."
+                )
             prepared.append((svg_path, updated, count))
 
     except (RuntimeError, KeyError, TypeError, ValueError) as exc:
-        print(f"Could not synchronize Pac-Man colours: {exc}", file=sys.stderr)
+        print(
+            f"Could not synchronize Pac-Man colours: {exc}",
+            file=sys.stderr,
+        )
         return 1
 
-    for svg_path, updated, count in prepared:
+    for svg_path, updated, _ in prepared:
         svg_path.write_text(updated, encoding="utf-8")
-        print(f"Updated {svg_path}: {count} animated contribution cell(s) recoloured.")
+        print(f"Wrote {svg_path}.")
 
     return 0
 

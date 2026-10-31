@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Mirror GitHub's live contribution-calendar colours in Pac-Man SVGs.
 
-Only the animated contribution-cell colours are changed. Static empty-cell
-fills, SVG backgrounds, maze walls, Pac-Man, ghosts, and labels are untouched.
+Only animated contribution-cell colours are changed, plus a redundant first
+month label when it duplicates the final month label. Static empty-cell fills,
+SVG backgrounds, maze walls, Pac-Man, ghosts, and all other labels are untouched.
 """
 
 from __future__ import annotations
@@ -55,6 +56,56 @@ VALUES_RE = re.compile(
     r"(\bvalues\s*=\s*)(['\"])(.*?)\2", re.IGNORECASE | re.DOTALL
 )
 HEX_COLOR_RE = re.compile(r"#[0-9a-fA-F]{6}")
+MONTH_NAMES = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"}
+MONTH_TEXT_RE = re.compile(r"<text\b(?P<attrs>[^>]*)>(?P<label>[^<]*)</text>", re.IGNORECASE | re.DOTALL)
+
+
+def _svg_attr(attrs: str, name: str) -> str | None:
+    match = re.search(
+        rf"\b{re.escape(name)}\s*=\s*([\"'])(.*?)\1",
+        attrs,
+        re.IGNORECASE | re.DOTALL,
+    )
+    return match.group(2) if match else None
+
+
+def remove_duplicate_boundary_month_label(svg_text: str) -> tuple[str, bool]:
+    """Remove the first month label when it duplicates the final month label.
+
+    The upstream graph can show 13 month labels for a rolling year (for example,
+    Oct through Oct). Keep the final/current month label and remove only the
+    redundant left-edge label. Contribution data and SVG geometry are untouched.
+    """
+    month_matches: list[tuple[re.Match[str], str, float]] = []
+    for match in MONTH_TEXT_RE.finditer(svg_text):
+        label = match.group("label").strip().lower()
+        if label not in MONTH_NAMES:
+            continue
+        attrs = match.group("attrs")
+        y_value = _svg_attr(attrs, "y")
+        x_value = _svg_attr(attrs, "x")
+        if y_value is None or x_value is None:
+            continue
+        try:
+            # Month labels sit on the top row. Restrict the edit to that row.
+            if abs(float(y_value) - 10.0) > 0.1:
+                continue
+            x = float(x_value)
+        except ValueError:
+            continue
+        month_matches.append((match, label, x))
+
+    if len(month_matches) < 2:
+        return svg_text, False
+
+    first_match, first_month, first_x = month_matches[0]
+    _, last_month, last_x = month_matches[-1]
+    if first_month == last_month and first_x < last_x:
+        return (
+            svg_text[:first_match.start()] + svg_text[first_match.end():],
+            True,
+        )
+    return svg_text, False
 
 
 def fetch_github_palette(username: str, token: str) -> list[str]:
@@ -210,6 +261,9 @@ def main() -> int:
         for svg_path in svg_files:
             original = svg_path.read_text(encoding="utf-8")
             updated, count = recolor_svg(original, target_colors, svg_path.name)
+            updated, removed_leading_month = remove_duplicate_boundary_month_label(updated)
+            if removed_leading_month:
+                print(f"Removed duplicated leading {svg_path.name} month label.")
             prepared.append((svg_path, updated, count))
 
     except (RuntimeError, KeyError, TypeError, ValueError) as exc:

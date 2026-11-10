@@ -194,8 +194,8 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 
 ---
 
+<!--
 ### What Keeps Me Going
-
 > A few lines I actually keep coming back to on the long build nights.
 
 > *"Discipline equals freedom."* — **Jocko Willink**
@@ -208,6 +208,27 @@ Track expenses, set budgets, and get payment reminders — with Firebase-backed 
 
 <div align="center">
 <em>Translation: ship the feature, fix the bug, write the tests, then go again tomorrow.</em>
+</div>
+-->
+
+### What Keeps Me Going
+
+> A few words from people whose mindset, work and achievements I deeply admire.
+
+> *"Your time is limited, so don't waste it living someone else's life."* — **Steve Jobs**
+
+> *"Imagination is more important than knowledge."* — **Albert Einstein**
+
+> *"When something is important enough, you do it even if the odds are not in your favor."* — **Elon Musk**
+
+> *"Talk is cheap. Show me the code."* — **Linus Torvalds**
+
+> *"I don't stop when I'm tired, I stop when I'm done."* — **David Goggins**
+
+> *"Talent without the work, it's nothing."* — **Cristiano Ronaldo**
+
+<div align="center">
+<em>Think boldly. Stay curious. Build relentlessly. Embrace discomfort. Let your work speak.</em>
 </div>
 
 ---
